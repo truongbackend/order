@@ -65,17 +65,17 @@
                         <td>{{ filterInventorys.tenchinhanh }}</td>
                         <td>{{ filterInventorys.ma_nv5 }}</td>
                         <td>{{ filterInventorys.ten_nv5 }}</td>
-                        <td>{{ filterInventorys.t_tien_thuc_hien }}</td>
-                        <td>{{ filterInventorys.thanh_toantrongky }}</td>
-                        <td>{{ filterInventorys.t_tien_conno }}</td>
+                        <td>{{ formatNumber(filterInventorys.t_tien_thuc_hien) }}</td>
+                        <td>{{ formatNumber(filterInventorys.thanh_toantrongky) }}</td>
+                        <td>{{ formatNumber(filterInventorys.t_tien_conno) }}</td>
                     </tr>
                 </tbody>
             </table>
         </div>
         <div class="alert alert-warning text-end" role="alert">
-            Tổng tiền thực hiện: {{ totalThucHien }},
-            Tổng tiền thu trong kỳ: {{ totalThuTrongKy }},
-            Tổng tiền nợ hiện tại: {{ totalTienKh }}
+            Tổng tiền thực hiện: {{ formatNumber(totalThucHien) }},
+            Tổng tiền thu trong kỳ: {{ formatNumber(totalThuTrongKy) }},
+            Tổng tiền nợ hiện tại: {{ formatNumber(totalTienKh) }}
         </div>
     </div>
 </div>
@@ -103,13 +103,13 @@
                                 <td>{{ onTopOrders.tenchinhanh }}</td>
                                 <td>{{ onTopOrders.ma_nv5 }}</td>
                                 <td>{{ onTopOrders.ten_nv5 }}</td>
-                                <td>{{ onTopOrders.t_tien_thuc_hien }}</td>
+                                <td>{{ formatNumber(onTopOrders.t_tien_thuc_hien) }}</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
                 <div class="alert alert-warning text-end mt-2" role="alert"> Tổng tiền thực hiện (Top 10): {{
-                        totalThucHienTopOrder }}</div>
+                        formatNumber(totalThucHienTopOrder) }}</div>
             </div>
         </div>
     </div>
@@ -137,15 +137,15 @@
                                 <td>{{ onTopDebtss.tenchinhanh }}</td>
                                 <td>{{ onTopDebtss.ma_nv5 }}</td>
                                 <td>{{ onTopDebtss.ten_nv5 }}</td>
-                                <td>{{ onTopDebtss.thanh_toantrongky }}</td>
-                                <td>{{ onTopDebtss.t_tien_conno }}</td>
+                                <td>{{ formatNumber(onTopDebtss.thanh_toantrongky) }}</td>
+                                <td>{{ formatNumber(onTopDebtss.t_tien_conno) }}</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
                 <div class="alert alert-warning text-end mt-2" role="alert">Tổng tiền thu trong kỳ (Top 10): {{
                         totalThuTrongKyTopDebts }},
-                    Tổng tiền nợ hiện tại (Top 10): {{ totalTienConNo }} </div>
+                    Tổng tiền nợ hiện tại (Top 10): {{ formatNumber(totalTienConNo) }} </div>
             </div>
         </div>
     </div>
@@ -207,6 +207,13 @@ export default {
                 .catch((error) => {
                     console.log(error);
                 });
+        };
+        const formatNumber = (value) => {
+            if (value !== undefined && value !== null) {
+                return value.toLocaleString();
+            } else {
+                return '';
+            }
         };
         const getInventory = () => {
             const axiosConfig = {
@@ -318,6 +325,7 @@ export default {
             totalTienConNo,
             getInventory,
             isLoading,
+            formatNumber,
         };
     }
 };

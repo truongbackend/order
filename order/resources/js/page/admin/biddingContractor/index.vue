@@ -44,7 +44,7 @@
                         <div class="avatar me-2"><span class="avatar-initial rounded bg-label-primary"><i class="bx bxs-truck"></i></span></div>
                         <h4 class="ms-1 mb-0">Số lượng mời thầu</h4>
                     </div>
-                    <p class="mb-1">{{ ds_thamgiathauchung.soluong_moithau }} M</p>
+                    <p class="mb-1">{{ formatNumber(ds_thamgiathauchung.soluong_moithau) }} </p>
                 </div>
             </div>
         </div>
@@ -55,7 +55,7 @@
                         <div class="avatar me-2"><span class="avatar-initial rounded bg-label-warning"><i class="bx bx-cart"></i></span></div>
                         <h4 class="ms-1 mb-0">Giá trị mời thầu</h4>
                     </div>
-                    <p class="mb-1">{{ ds_thamgiathauchung.giatri_moithau }} đ</p>
+                    <p class="mb-1">{{ formatNumber(ds_thamgiathauchung.giatri_moithau) }} đ</p>
                 </div>
             </div>
         </div>
@@ -66,7 +66,7 @@
                         <div class="avatar me-2"><span class="avatar-initial rounded bg-label-danger"><i class="bx bx-error"></i></span></div>
                         <h4 class="ms-1 mb-0">SL Trúng thầu </h4>
                     </div>
-                    <p class="mb-1">{{ ds_thamgiathauchung.soluong_trungthautrongky }} M</p>
+                    <p class="mb-1">{{ formatNumber(ds_thamgiathauchung.soluong_trungthautrongky) }} </p>
                 </div>
             </div>
         </div>
@@ -77,7 +77,7 @@
                         <div class="avatar me-2"><span class="avatar-initial rounded bg-label-info"><i class="bx bx-user"></i></span></div>
                         <h4 class="ms-1 mb-0">Gía trị trúng thầu</h4>
                     </div>
-                    <p class="mb-1">{{ ds_thamgiathauchung.giatri_trungthautrongky }} đ</p>
+                    <p class="mb-1">{{ formatNumber(ds_thamgiathauchung.giatri_trungthautrongky) }} đ</p>
                 </div>
             </div>
         </div>
@@ -105,8 +105,8 @@
                             <tbody>
                                 <tr v-for="(ds_thamgiathautheochinhanhs, index) in ds_thamgiathautheochinhanh" :key="index">
                                     <td>{{ ds_thamgiathautheochinhanhs.ten }}</td>
-                                    <td>{{ ds_thamgiathautheochinhanhs.giatri_moithau }}</td>
-                                    <td>{{ ds_thamgiathautheochinhanhs.giatri_trungthau }}</td>
+                                    <td>{{ formatNumber(ds_thamgiathautheochinhanhs.giatri_moithau) }}</td>
+                                    <td>{{ formatNumber(ds_thamgiathautheochinhanhs.giatri_trungthau) }}</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -132,8 +132,8 @@
                             <tbody>
                                 <tr v-for="(ds_thamgiathautheokhachhangs, index) in ds_thamgiathautheokhachhang" :key="index">
                                     <td>{{ ds_thamgiathautheokhachhangs.ten }}</td>
-                                    <td>{{ ds_thamgiathautheokhachhangs.giatri_moithau }}</td>
-                                    <td>{{ ds_thamgiathautheokhachhangs.giatri_trungthau }}</td>
+                                    <td>{{ formatNumber(ds_thamgiathautheokhachhangs.giatri_moithau) }}</td>
+                                    <td>{{ formatNumber(ds_thamgiathautheokhachhangs.giatri_trungthau) }}</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -160,8 +160,8 @@
                             <tbody>
                                 <tr v-for="(ds_thamgiathautheosanphams, index) in ds_thamgiathautheosanpham" :key="index">
                                     <td>{{ ds_thamgiathautheosanphams.ten }}</td>
-                                    <td>{{ ds_thamgiathautheosanphams.giatri_moithau }}</td>
-                                    <td>{{ ds_thamgiathautheosanphams.giatri_trungthau }}</td>
+                                    <td>{{ formatNumber(ds_thamgiathautheosanphams.giatri_moithau) }}</td>
+                                    <td>{{ formatNumber(ds_thamgiathautheosanphams.giatri_trungthau) }}</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -184,15 +184,15 @@
                                 <th v-for="(ds_thamgiathautheochinhanh_theonams, index) in ds_thamgiathautheochinhanh_theonam" :key="index" colspan="2">{{ ds_thamgiathautheochinhanh_theonams.thang }}</th>
                             </tr>
                             <tr>
-                                <th v-for="(ds_thamgiathautheochinhanh_theonams, index) in ds_thamgiathautheochinhanh_theonam" :key="index">Gía trị mời thầu</th>
-                                <th v-for="(ds_thamgiathautheochinhanh_theonams, index) in ds_thamgiathautheochinhanh_theonam" :key="index">Gía trị trúng thầu</th>
+                                <th v-for="(ds_thamgiathautheochinhanh_theonams, index) in ds_thamgiathautheochinhanh_theonam" :key="index">Giá trị mời thầu</th>
+                                <th v-for="(ds_thamgiathautheochinhanh_theonams, index) in ds_thamgiathautheochinhanh_theonam" :key="index">Giá trị trúng thầu</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr v-for="(ds_thamgiathautheochinhanh_theonams, index) in ds_thamgiathautheochinhanh_theonam" :key="index">
                                 <td>{{ ds_thamgiathautheochinhanh_theonams.ten }}</td>
-                                <td v-for="(ds_thamgiathautheochinhanh_theonams, index) in ds_thamgiathautheochinhanh_theonam" :key="index">{{ ds_thamgiathautheochinhanh_theonams.giatri_moithau }}</td>
-                                <td v-for="(ds_thamgiathautheochinhanh_theonams, index) in ds_thamgiathautheochinhanh_theonam" :key="index">{{ ds_thamgiathautheochinhanh_theonams.giatri_trungthau }}</td>
+                                <td v-for="(ds_thamgiathautheochinhanh_theonams, index) in ds_thamgiathautheochinhanh_theonam" :key="index">{{ formatNumber(ds_thamgiathautheochinhanh_theonams.giatri_moithau) }}</td>
+                                <td v-for="(ds_thamgiathautheochinhanh_theonams, index) in ds_thamgiathautheochinhanh_theonam" :key="index">{{ formatNumber(ds_thamgiathautheochinhanh_theonams.giatri_trungthau) }}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -212,15 +212,15 @@
                                 <th v-for="(ds_thamgiathautheokhachhang_theonams, index) in ds_thamgiathautheokhachhang_theonam" :key="index" colspan="2">{{ ds_thamgiathautheokhachhang_theonams.thang }}</th>
                             </tr>
                             <tr>
-                                <th v-for="(ds_thamgiathautheokhachhang_theonams, index) in ds_thamgiathautheokhachhang_theonam" :key="index">Gía trị mời thầu</th>
-                                <th v-for="(ds_thamgiathautheokhachhang_theonams, index) in ds_thamgiathautheokhachhang_theonam" :key="index">Gía trị trúng thầu</th>
+                                <th v-for="(ds_thamgiathautheokhachhang_theonams, index) in ds_thamgiathautheokhachhang_theonam" :key="index">Giá trị mời thầu</th>
+                                <th v-for="(ds_thamgiathautheokhachhang_theonams, index) in ds_thamgiathautheokhachhang_theonam" :key="index">Giá trị trúng thầu</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr v-for="(ds_thamgiathautheokhachhang_theonams, index) in ds_thamgiathautheokhachhang_theonam" :key="index">
                                 <td>{{ ds_thamgiathautheokhachhang_theonams.ten }}</td>
-                                <td v-for="(ds_thamgiathautheokhachhang_theonams, index) in ds_thamgiathautheokhachhang_theonam" :key="index">{{ ds_thamgiathautheokhachhang_theonams.giatri_moithau }}</td>
-                                <td v-for="(ds_thamgiathautheokhachhang_theonams, index) in ds_thamgiathautheokhachhang_theonam" :key="index">{{ ds_thamgiathautheokhachhang_theonams.giatri_trungthau }}</td>
+                                <td v-for="(ds_thamgiathautheokhachhang_theonams, index) in ds_thamgiathautheokhachhang_theonam" :key="index">{{ formatNumber(ds_thamgiathautheokhachhang_theonams.giatri_moithau) }}</td>
+                                <td v-for="(ds_thamgiathautheokhachhang_theonams, index) in ds_thamgiathautheokhachhang_theonam" :key="index">{{ formatNumber(ds_thamgiathautheokhachhang_theonams.giatri_trungthau) }}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -240,15 +240,15 @@
                                 <th v-for="(ds_thamgiathautheosanpham_theonams, index) in ds_thamgiathautheosanpham_theonam" :key="index" colspan="2">{{ ds_thamgiathautheosanpham_theonams.thang }}</th>
                             </tr>
                             <tr>
-                                <th v-for="(ds_thamgiathautheosanpham_theonams, index) in ds_thamgiathautheosanpham_theonam" :key="index">Gía trị mời thầu</th>
-                                <th v-for="(ds_thamgiathautheosanpham_theonams, index) in ds_thamgiathautheosanpham_theonam" :key="index">Gía trị trúng thầu</th>
+                                <th v-for="(ds_thamgiathautheosanpham_theonams, index) in ds_thamgiathautheosanpham_theonam" :key="index">Giá trị mời thầu</th>
+                                <th v-for="(ds_thamgiathautheosanpham_theonams, index) in ds_thamgiathautheosanpham_theonam" :key="index">Giá trị trúng thầu</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr v-for="(ds_thamgiathautheosanpham_theonams, index) in ds_thamgiathautheosanpham_theonam" :key="index">
                                 <td>{{ ds_thamgiathautheosanpham_theonams.ten }}</td>
-                                <td v-for="(ds_thamgiathautheosanpham_theonams, index) in ds_thamgiathautheosanpham_theonam" :key="index">{{ ds_thamgiathautheosanpham_theonams.giatri_moithau }}</td>
-                                <td v-for="(ds_thamgiathautheosanpham_theonams, index) in ds_thamgiathautheosanpham_theonam" :key="index">{{ ds_thamgiathautheosanpham_theonams.giatri_trungthau }}</td>
+                                <td v-for="(ds_thamgiathautheosanpham_theonams, index) in ds_thamgiathautheosanpham_theonam" :key="index">{{ formatNumber(ds_thamgiathautheosanpham_theonams.giatri_moithau) }}</td>
+                                <td v-for="(ds_thamgiathautheosanpham_theonams, index) in ds_thamgiathautheosanpham_theonam" :key="index">{{ formatNumber(ds_thamgiathautheosanpham_theonams.giatri_trungthau) }}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -295,10 +295,10 @@
                                     <td>{{ ds_tonthaus.ngay_trung_thau }}</td>
                                     <td>{{ ds_tonthaus.ngay_th_hd }}</td>
                                     <td>{{ ds_tonthaus.ngay_kt_hd }}</td>
-                                    <td>{{ ds_tonthaus.slThau }}</td>
-                                    <td>{{ ds_tonthaus.tienThau }}</td>
-                                    <td>{{ ds_tonthaus.slTonThau }}</td>
-                                    <td>{{ ds_tonthaus.tienTonThau }}</td>
+                                    <td>{{ formatNumber(ds_tonthaus.slThau) }}</td>
+                                    <td>{{ formatNumber(ds_tonthaus.tienThau) }}</td>
+                                    <td>{{ formatNumber(ds_tonthaus.slTonThau) }}</td>
+                                    <td>{{ formatNumber(ds_tonthaus.tienTonThau) }}</td>
 
                                 </tr>
                             </tbody>
@@ -408,6 +408,13 @@ export default {
                 .catch((error) => {
                     console.log(error);
                 });
+        };
+        const formatNumber = (value) => {
+            if (value !== undefined && value !== null) {
+                return value.toLocaleString();
+            } else {
+                return '';
+            }
         };
         const getCurrentYearDates = () => {
             const today = new Date();
@@ -550,6 +557,7 @@ export default {
             ds_thamgiathautheosanpham_theonam,
             ds_tonthau,
             ds_khachhangchuathamgia,
+            formatNumber
         };
     }
 };

@@ -70,25 +70,25 @@
                             <tr v-for="(ds_marketingtheochinhanhcaps, index) in ds_marketingtheochinhanhcap" :key="index">
                                 <td>{{ index + 1 }}</td>
                                 <td>{{ ds_marketingtheochinhanhcaps.ten}}</td>
-                                <td>{{ ds_marketingtheochinhanhcaps.soluong_khban}}</td>
-                                <td>{{ ds_marketingtheochinhanhcaps.tangtruong_slnamtruoc}}</td>
-                                <td>{{ ds_marketingtheochinhanhcaps.tile_soluongkhdat}}</td>
-                                <td>{{ ds_marketingtheochinhanhcaps.doanhso_khban}}</td>
-                                <td>{{ ds_marketingtheochinhanhcaps.tangtruong_dsnamtruoc}}</td>
-                                <td>{{ ds_marketingtheochinhanhcaps.tile_doanhsokhdat}}</td>
-                                <td>{{ ds_marketingtheochinhanhcaps.chiphi_kehoachmkt}}</td>
-                                <td>{{ ds_marketingtheochinhanhcaps.chiphi_kehoachmkt}}</td>
-                                <td>{{ ds_marketingtheochinhanhcaps.chiphi_kehoachmkt}}</td>
-                                <td>{{ ds_marketingtheochinhanhcaps.chiphi_kehoachmkt}}</td>
-                                <td>{{ ds_marketingtheochinhanhcaps.chiphi_kehoachmkt}}</td>
-                                <td>{{ ds_marketingtheochinhanhcaps.chiphi_thauthucco}}</td>
-                                <td>{{ ds_marketingtheochinhanhcaps.chiphi_thauquyettoan}}</td>
-                                <td>{{ ds_marketingtheochinhanhcaps.tile_quyettoancpthausovoikh}}</td>
-                                <td>{{ ds_marketingtheochinhanhcaps.giatri_trungthau}}</td>
-                                <td>{{ ds_marketingtheochinhanhcaps.giatri_thuchien}}</td>
-                                <td>{{ ds_marketingtheochinhanhcaps.tile_datkh}}</td>
-                                <td>{{ ds_marketingtheochinhanhcaps.giatri_tonthau}}</td>
-                                <td>{{ ds_marketingtheochinhanhcaps.giatri_bothau}}</td>
+                                <td>{{ formatNumber(ds_marketingtheochinhanhcaps.soluong_khban)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheochinhanhcaps.tangtruong_slnamtruoc)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheochinhanhcaps.tile_soluongkhdat)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheochinhanhcaps.doanhso_khban)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheochinhanhcaps.tangtruong_dsnamtruoc)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheochinhanhcaps.tile_doanhsokhdat)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheochinhanhcaps.chiphi_kehoachmkt)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheochinhanhcaps.chiphi_mktthucco)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheochinhanhcaps.chiphi_mktdaquyettoan)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheochinhanhcaps.tile_quyettoancpmktsovoikh)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheochinhanhcaps.chiphi_khthau)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheochinhanhcaps.chiphi_thauthucco)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheochinhanhcaps.chiphi_thauquyettoan)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheochinhanhcaps.tile_quyettoancpthausovoikh)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheochinhanhcaps.giatri_trungthau)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheochinhanhcaps.giatri_thuchien)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheochinhanhcaps.tile_datkh)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheochinhanhcaps.giatri_tonthau)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheochinhanhcaps.giatri_bothau)}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -132,25 +132,25 @@
                             <tr v-for="(ds_marketingtheonhanviens, index) in ds_marketingtheonhanvien" :key="index">
                                 <td>{{ index + 1 }}</td>
                                 <td>{{ ds_marketingtheonhanviens.ten}}</td>
-                                <td>{{ ds_marketingtheonhanviens.soluong_khban}}</td>
-                                <td>{{ ds_marketingtheonhanviens.tangtruong_slnamtruoc}}</td>
-                                <td>{{ ds_marketingtheonhanviens.tile_soluongkhdat}}</td>
-                                <td>{{ ds_marketingtheonhanviens.doanhso_khban}}</td>
-                                <td>{{ ds_marketingtheonhanviens.tangtruong_dsnamtruoc}}</td>
-                                <td>{{ ds_marketingtheonhanviens.tile_doanhsokhdat}}</td>
-                                <td>{{ ds_marketingtheonhanviens.chiphi_kehoachmkt}}</td>
-                                <td>{{ ds_marketingtheonhanviens.chiphi_kehoachmkt}}</td>
-                                <td>{{ ds_marketingtheonhanviens.chiphi_kehoachmkt}}</td>
-                                <td>{{ ds_marketingtheonhanviens.chiphi_kehoachmkt}}</td>
-                                <td>{{ ds_marketingtheonhanviens.chiphi_kehoachmkt}}</td>
-                                <td>{{ ds_marketingtheonhanviens.chiphi_thauthucco}}</td>
-                                <td>{{ ds_marketingtheonhanviens.chiphi_thauquyettoan}}</td>
-                                <td>{{ ds_marketingtheonhanviens.tile_quyettoancpthausovoikh}}</td>
-                                <td>{{ ds_marketingtheonhanviens.giatri_trungthau}}</td>
-                                <td>{{ ds_marketingtheonhanviens.giatri_thuchien}}</td>
-                                <td>{{ ds_marketingtheonhanviens.tile_datkh}}</td>
-                                <td>{{ ds_marketingtheonhanviens.giatri_tonthau}}</td>
-                                <td>{{ ds_marketingtheonhanviens.giatri_bothau}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonhanviens.soluong_khban)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonhanviens.tangtruong_slnamtruoc)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonhanviens.tile_soluongkhdat)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonhanviens.doanhso_khban)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonhanviens.tangtruong_dsnamtruoc)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonhanviens.tile_doanhsokhdat)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonhanviens.chiphi_kehoachmkt)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonhanviens.chiphi_mktthucco)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonhanviens.chiphi_mktdaquyettoan)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonhanviens.tile_quyettoancpmktsovoikh)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonhanviens.chiphi_khthau)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonhanviens.chiphi_thauthucco)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonhanviens.chiphi_thauquyettoan)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonhanviens.tile_quyettoancpthausovoikh)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonhanviens.giatri_trungthau)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonhanviens.giatri_thuchien)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonhanviens.tile_datkh)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonhanviens.giatri_tonthau)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonhanviens.giatri_bothau)}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -193,28 +193,28 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr v-for="(ds_marketingtheonhanviens, index) in ds_marketingtheonhanvien" :key="index">
+                            <tr v-for="(ds_marketingtheokhachhangs, index) in ds_marketingtheokhachhang" :key="index">
                                 <td>{{ index + 1 }}</td>
-                                <td>{{ ds_marketingtheonhanviens.ten}}</td>
-                                <td>{{ ds_marketingtheonhanviens.soluong_khban}}</td>
-                                <td>{{ ds_marketingtheonhanviens.tangtruong_slnamtruoc}}</td>
-                                <td>{{ ds_marketingtheonhanviens.tile_soluongkhdat}}</td>
-                                <td>{{ ds_marketingtheonhanviens.doanhso_khban}}</td>
-                                <td>{{ ds_marketingtheonhanviens.tangtruong_dsnamtruoc}}</td>
-                                <td>{{ ds_marketingtheonhanviens.tile_doanhsokhdat}}</td>
-                                <td>{{ ds_marketingtheonhanviens.chiphi_kehoachmkt}}</td>
-                                <td>{{ ds_marketingtheonhanviens.chiphi_kehoachmkt}}</td>
-                                <td>{{ ds_marketingtheonhanviens.chiphi_kehoachmkt}}</td>
-                                <td>{{ ds_marketingtheonhanviens.chiphi_kehoachmkt}}</td>
-                                <td>{{ ds_marketingtheonhanviens.chiphi_kehoachmkt}}</td>
-                                <td>{{ ds_marketingtheonhanviens.chiphi_thauthucco}}</td>
-                                <td>{{ ds_marketingtheonhanviens.chiphi_thauquyettoan}}</td>
-                                <td>{{ ds_marketingtheonhanviens.tile_quyettoancpthausovoikh}}</td>
-                                <td>{{ ds_marketingtheonhanviens.giatri_trungthau}}</td>
-                                <td>{{ ds_marketingtheonhanviens.giatri_thuchien}}</td>
-                                <td>{{ ds_marketingtheonhanviens.tile_datkh}}</td>
-                                <td>{{ ds_marketingtheonhanviens.giatri_tonthau}}</td>
-                                <td>{{ ds_marketingtheonhanviens.giatri_bothau}}</td>
+                                <td>{{ ds_marketingtheokhachhangs.ten}}</td>
+                                <td>{{ formatNumber(ds_marketingtheokhachhangs.soluong_khban)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheokhachhangs.tangtruong_slnamtruoc)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheokhachhangs.tile_soluongkhdat)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheokhachhangs.doanhso_khban)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheokhachhangs.tangtruong_dsnamtruoc)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheokhachhangs.tile_doanhsokhdat)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheokhachhangs.chiphi_kehoachmkt)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheokhachhangs.chiphi_mktthucco)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheokhachhangs.chiphi_mktdaquyettoan)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheokhachhangs.tile_quyettoancpmktsovoikh)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheokhachhangs.chiphi_khthau)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheokhachhangs.chiphi_thauthucco)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheokhachhangs.chiphi_thauquyettoan)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheokhachhangs.tile_quyettoancpthausovoikh)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheokhachhangs.giatri_trungthau)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheokhachhangs.giatri_thuchien)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheokhachhangs.tile_datkh)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheokhachhangs.giatri_tonthau)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheokhachhangs.giatri_bothau)}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -258,25 +258,25 @@
                             <tr v-for="(ds_marketingtheonkhs, index) in ds_marketingtheonkh" :key="index">
                                 <td>{{ index + 1 }}</td>
                                 <td>{{ ds_marketingtheonkhs.ten}}</td>
-                                <td>{{ ds_marketingtheonkhs.soluong_khban}}</td>
-                                <td>{{ ds_marketingtheonkhs.tangtruong_slnamtruoc}}</td>
-                                <td>{{ ds_marketingtheonkhs.tile_soluongkhdat}}</td>
-                                <td>{{ ds_marketingtheonkhs.doanhso_khban}}</td>
-                                <td>{{ ds_marketingtheonkhs.tangtruong_dsnamtruoc}}</td>
-                                <td>{{ ds_marketingtheonkhs.tile_doanhsokhdat}}</td>
-                                <td>{{ ds_marketingtheonkhs.chiphi_kehoachmkt}}</td>
-                                <td>{{ ds_marketingtheonkhs.chiphi_kehoachmkt}}</td>
-                                <td>{{ ds_marketingtheonkhs.chiphi_kehoachmkt}}</td>
-                                <td>{{ ds_marketingtheonkhs.chiphi_kehoachmkt}}</td>
-                                <td>{{ ds_marketingtheonkhs.chiphi_kehoachmkt}}</td>
-                                <td>{{ ds_marketingtheonkhs.chiphi_thauthucco}}</td>
-                                <td>{{ ds_marketingtheonkhs.chiphi_thauquyettoan}}</td>
-                                <td>{{ ds_marketingtheonkhs.tile_quyettoancpthausovoikh}}</td>
-                                <td>{{ ds_marketingtheonkhs.giatri_trungthau}}</td>
-                                <td>{{ ds_marketingtheonkhs.giatri_thuchien}}</td>
-                                <td>{{ ds_marketingtheonkhs.tile_datkh}}</td>
-                                <td>{{ ds_marketingtheonkhs.giatri_tonthau}}</td>
-                                <td>{{ ds_marketingtheonkhs.giatri_bothau}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonkhs.soluong_khban)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonkhs.tangtruong_slnamtruoc)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonkhs.tile_soluongkhdat)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonkhs.doanhso_khban)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonkhs.tangtruong_dsnamtruoc)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonkhs.tile_doanhsokhdat)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonkhs.chiphi_kehoachmkt)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonkhs.chiphi_mktthucco)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonkhs.chiphi_mktdaquyettoan)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonkhs.tile_quyettoancpmktsovoikh)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonkhs.chiphi_khthau)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonkhs.chiphi_thauthucco)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonkhs.chiphi_thauquyettoan)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonkhs.tile_quyettoancpthausovoikh)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonkhs.giatri_trungthau)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonkhs.giatri_thuchien)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonkhs.tile_datkh)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonkhs.giatri_tonthau)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonkhs.giatri_bothau)}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -322,25 +322,25 @@
                             <tr v-for="(ds_marketingtheonsps, index) in ds_marketingtheonsp" :key="index">
                                 <td>{{ index + 1 }}</td>
                                 <td>{{ ds_marketingtheonsps.ten}}</td>
-                                <td>{{ ds_marketingtheonsps.soluong_khban}}</td>
-                                <td>{{ ds_marketingtheonsps.tangtruong_slnamtruoc}}</td>
-                                <td>{{ ds_marketingtheonsps.tile_soluongkhdat}}</td>
-                                <td>{{ ds_marketingtheonsps.doanhso_khban}}</td>
-                                <td>{{ ds_marketingtheonsps.tangtruong_dsnamtruoc}}</td>
-                                <td>{{ ds_marketingtheonsps.tile_doanhsokhdat}}</td>
-                                <td>{{ ds_marketingtheonsps.chiphi_kehoachmkt}}</td>
-                                <td>{{ ds_marketingtheonsps.chiphi_kehoachmkt}}</td>
-                                <td>{{ ds_marketingtheonsps.chiphi_kehoachmkt}}</td>
-                                <td>{{ ds_marketingtheonsps.chiphi_kehoachmkt}}</td>
-                                <td>{{ ds_marketingtheonsps.chiphi_kehoachmkt}}</td>
-                                <td>{{ ds_marketingtheonsps.chiphi_thauthucco}}</td>
-                                <td>{{ ds_marketingtheonsps.chiphi_thauquyettoan}}</td>
-                                <td>{{ ds_marketingtheonsps.tile_quyettoancpthausovoikh}}</td>
-                                <td>{{ ds_marketingtheonsps.giatri_trungthau}}</td>
-                                <td>{{ ds_marketingtheonsps.giatri_thuchien}}</td>
-                                <td>{{ ds_marketingtheonsps.tile_datkh}}</td>
-                                <td>{{ ds_marketingtheonsps.giatri_tonthau}}</td>
-                                <td>{{ ds_marketingtheonsps.giatri_bothau}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonsps.soluong_khban)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonsps.tangtruong_slnamtruoc)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonsps.tile_soluongkhdat)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonsps.doanhso_khban)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonsps.tangtruong_dsnamtruoc)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonsps.tile_doanhsokhdat)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonsps.chiphi_kehoachmkt)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonsps.chiphi_mktthucco)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonsps.chiphi_mktdaquyettoan)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonsps.tile_quyettoancpmktsovoikh)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonsps.chiphi_khthau)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonsps.chiphi_thauthucco)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonsps.chiphi_thauquyettoan)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonsps.tile_quyettoancpthausovoikh)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonsps.giatri_trungthau)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonsps.giatri_thuchien)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonsps.tile_datkh)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonsps.giatri_tonthau)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheonsps.giatri_bothau)}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -384,25 +384,25 @@
                             <tr v-for="(ds_marketingtheosanphams, index) in ds_marketingtheosanpham" :key="index">
                                 <td>{{ index + 1 }}</td>
                                 <td>{{ ds_marketingtheosanphams.ten}}</td>
-                                <td>{{ ds_marketingtheosanphams.soluong_khban}}</td>
-                                <td>{{ ds_marketingtheosanphams.tangtruong_slnamtruoc}}</td>
-                                <td>{{ ds_marketingtheosanphams.tile_soluongkhdat}}</td>
-                                <td>{{ ds_marketingtheosanphams.doanhso_khban}}</td>
-                                <td>{{ ds_marketingtheosanphams.tangtruong_dsnamtruoc}}</td>
-                                <td>{{ ds_marketingtheosanphams.tile_doanhsokhdat}}</td>
-                                <td>{{ ds_marketingtheosanphams.chiphi_kehoachmkt}}</td>
-                                <td>{{ ds_marketingtheosanphams.chiphi_kehoachmkt}}</td>
-                                <td>{{ ds_marketingtheosanphams.chiphi_kehoachmkt}}</td>
-                                <td>{{ ds_marketingtheosanphams.chiphi_kehoachmkt}}</td>
-                                <td>{{ ds_marketingtheosanphams.chiphi_kehoachmkt}}</td>
-                                <td>{{ ds_marketingtheosanphams.chiphi_thauthucco}}</td>
-                                <td>{{ ds_marketingtheosanphams.chiphi_thauquyettoan}}</td>
-                                <td>{{ ds_marketingtheosanphams.tile_quyettoancpthausovoikh}}</td>
-                                <td>{{ ds_marketingtheosanphams.giatri_trungthau}}</td>
-                                <td>{{ ds_marketingtheosanphams.giatri_thuchien}}</td>
-                                <td>{{ ds_marketingtheosanphams.tile_datkh}}</td>
-                                <td>{{ ds_marketingtheosanphams.giatri_tonthau}}</td>
-                                <td>{{ ds_marketingtheosanphams.giatri_bothau}}</td>
+                                <td>{{ formatNumber(ds_marketingtheosanphams.soluong_khban)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheosanphams.tangtruong_slnamtruoc)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheosanphams.tile_soluongkhdat)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheosanphams.doanhso_khban)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheosanphams.tangtruong_dsnamtruoc)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheosanphams.tile_doanhsokhdat)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheosanphams.chiphi_kehoachmkt)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheosanphams.chiphi_mktthucco)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheosanphams.chiphi_mktdaquyettoan)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheosanphams.tile_quyettoancpmktsovoikh)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheosanphams.chiphi_khthau)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheosanphams.chiphi_thauthucco)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheosanphams.chiphi_thauquyettoan)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheosanphams.tile_quyettoancpthausovoikh)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheosanphams.giatri_trungthau)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheosanphams.giatri_thuchien)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheosanphams.tile_datkh)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheosanphams.giatri_tonthau)}}</td>
+                                <td>{{ formatNumber(ds_marketingtheosanphams.giatri_bothau)}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -485,6 +485,13 @@ export default {
                 .catch((error) => {
                     console.log(error);
                 });
+        };
+        const formatNumber = (value) => {
+            if (value !== undefined && value !== null) {
+                return value.toLocaleString();
+            } else {
+                return '';
+            }
         };
         const getInventory = () => {
             const axiosConfig = {
@@ -649,6 +656,7 @@ export default {
             ds_marketingtheosanpham,
             ds_marketingtheochinhanhcap,
             getInventory,
+            formatNumber
         };
     }
 };

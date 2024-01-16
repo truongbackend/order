@@ -203,33 +203,33 @@
                             </tr>
                             <tr v-for="ds_chitiet in ds_thongtinthaus.ds_chitiet">
                                 <td>{{ds_chitiet.thang}}</td>
-                                <td>{{ds_chitiet.slThau}}</td>
-                                <td>{{ds_chitiet.tienThau}}</td>
-                                <td>{{ds_chitiet.slThucHien}}</td>
-                                <td>{{ds_chitiet.tienThucHien}}</td>
-                                <td>{{ds_chitiet.slBoThau}}</td>
-                                <td>{{ds_chitiet.tienBoThau}}</td>
-                                <td>{{ds_chitiet.slTonThau}}</td>
-                                <td>{{ds_chitiet.tienTonThau}}</td>
-                                <td>{{ds_chitiet.slThucHienCungKy}}</td>
-                                <td>{{ds_chitiet.tienThucHienCungKy}}</td>
-                                <td>{{ds_chitiet.slBoThauCungKy}}</td>
-                                <td>{{ds_chitiet.tienBoThauCungKy}}</td>
+                                <td>{{formatNumber(ds_chitiet.slThau)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tienThau)}}</td>
+                                <td>{{formatNumber(ds_chitiet.slThucHien)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tienThucHien)}}</td>
+                                <td>{{formatNumber(ds_chitiet.slBoThau)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tienBoThau)}}</td>
+                                <td>{{formatNumber(ds_chitiet.slTonThau)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tienTonThau)}}</td>
+                                <td>{{formatNumber(ds_chitiet.slThucHienCungKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tienThucHienCungKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.slBoThauCungKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tienBoThauCungKy)}}</td>
                             </tr>
                             <tr class="alert alert-info">
                                 <td>TC</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumSLThau}}</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumTienThau}}</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumSLThucHien}}</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumTienThucHien}}</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumSLBoThau}}</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumTienBoThau}}</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumSLTonThau}}</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumTienTonThau}}</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumSLThucHienCungKy}}</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumTienThucHienCungKy}}</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumSLBoThauCungKy}}</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumTienBoThauCungKy}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumSLThau)}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumTienThau)}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumSLThucHien)}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumTienThucHien)}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumSLBoThau)}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumTienBoThau)}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumSLTonThau)}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumTienTonThau)}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumSLThucHienCungKy)}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumTienThucHienCungKy)}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumSLBoThauCungKy)}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumTienBoThauCungKy)}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -263,18 +263,18 @@
                         <tbody>
                             <tr class="alert alert-info">
                                 <td></td>
-                                <td>{{tc_thongtinthau.sumSLThau}}</td>
-                                <td>{{tc_thongtinthau.sumTienThau}}</td>
-                                <td>{{tc_thongtinthau.sumSLThucHien}}</td>
-                                <td>{{tc_thongtinthau.sumTienThucHien}}</td>
-                                <td>{{tc_thongtinthau.sumSLBoThau}}</td>
-                                <td>{{tc_thongtinthau.sumTienBoThau}}</td>
-                                <td>{{tc_thongtinthau.sumSLTonThau}}</td>
-                                <td>{{tc_thongtinthau.sumTienTonThau}}</td>
-                                <td>{{tc_thongtinthau.sumSLThucHienCungKy}}</td>
-                                <td>{{tc_thongtinthau.sumTienThucHienCungKy}}</td>
-                                <td>{{tc_thongtinthau.sumSLBoThauCungKy}}</td>
-                                <td>{{tc_thongtinthau.sumTienBoThauCungKy}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumSLThau)}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumTienThau)}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumSLThucHien)}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumTienThucHien)}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumSLBoThau)}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumTienBoThau)}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumSLTonThau)}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumTienTonThau)}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumSLThucHienCungKy)}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumTienThucHienCungKy)}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumSLBoThauCungKy)}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumTienBoThauCungKy)}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -310,29 +310,29 @@
                             <tr v-for="ds_chitiet in ds_doanhsotheokenhs.ds_chitiet">
                                 <td>{{ds_chitiet.thang}}</td>
                                 <td>{{ds_chitiet.maKhuVuc}}</td>
-                                <td>{{ds_chitiet.slChiTieuDuocTrongKy}}</td>
-                                <td>{{ds_chitiet.tienChiTieuDuocTrongKy}}</td>
-                                <td>{{ds_chitiet.slDuocTrongKy}}</td>
-                                <td>{{ds_chitiet.dsDuocTrongKy}}</td>
-                                <td>{{ds_chitiet.tyle_trong}}</td>
-                                <td>{{ds_chitiet.slChiTieuDuocCungKy}}</td>
-                                <td>{{ds_chitiet.tienChiTieuDuocCungKy}}</td>
-                                <td>{{ds_chitiet.slDuocCungKy}}</td>
-                                <td>{{ds_chitiet.dsDuocCungKy}}</td>
-                                <td>{{ds_chitiet.tyle_cung}}</td>
+                                <td>{{formatNumber(ds_chitiet.slChiTieuDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tienChiTieuDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.slDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.dsDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tyle_trong)}}</td>
+                                <td>{{formatNumber(ds_chitiet.slChiTieuDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tienChiTieuDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.slDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.dsDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tyle_cung)}}</td>
                             </tr>
                             <tr class="alert alert-info">
                                 <td colspan="2">Tổng</td>
-                                <td>{{ds_doanhsotheokenhs.tong_cong.sumSLChiTieuDuocTrongKy}}</td>
-                                <td>{{ds_doanhsotheokenhs.tong_cong.sumTienChiTieuDuocTrongKy}}</td>
-                                <td>{{ds_doanhsotheokenhs.tong_cong.sumSLDuocTrongKy}}</td>
-                                <td>{{ds_doanhsotheokenhs.tong_cong.sumDSDuocTrongKy}}</td>
-                                <td>{{ds_doanhsotheokenhs.tong_cong.sumtyle_trong}}</td>
-                                <td>{{ds_doanhsotheokenhs.tong_cong.sumSLChiTieuDuocCungKy}}</td>
-                                <td>{{ds_doanhsotheokenhs.tong_cong.sumTienChiTieuDuocCungKy}}</td>
-                                <td>{{ds_doanhsotheokenhs.tong_cong.sumSLDuocCungKy}}</td>
-                                <td>{{ds_doanhsotheokenhs.tong_cong.sumDSDuocCungKy}}</td>
-                                <td>{{ds_doanhsotheokenhs.tong_cong.sumtyle_cung}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokenhs.tong_cong.sumSLChiTieuDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokenhs.tong_cong.sumTienChiTieuDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokenhs.tong_cong.sumSLDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokenhs.tong_cong.sumDSDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokenhs.tong_cong.sumtyle_trong)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokenhs.tong_cong.sumSLChiTieuDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokenhs.tong_cong.sumTienChiTieuDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokenhs.tong_cong.sumSLDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokenhs.tong_cong.sumDSDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokenhs.tong_cong.sumtyle_cung)}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -364,16 +364,16 @@
                         <tbody>
                             <tr class="alert alert-info">
                                 <td colspan="2">Tổng Doanh số theo kênh</td>
-                                <td>{{tc_doanhsotheokenh.sumSLChiTieuDuocTrongKy}}</td>
-                                <td>{{tc_doanhsotheokenh.sumTienChiTieuDuocTrongKy}}</td>
-                                <td>{{tc_doanhsotheokenh.sumSLDuocTrongKy}}</td>
-                                <td>{{tc_doanhsotheokenh.sumDSDuocTrongKy}}</td>
-                                <td>{{tc_doanhsotheokenh.sumtyle_trong}}</td>
-                                <td>{{tc_doanhsotheokenh.sumSLChiTieuDuocCungKy}}</td>
-                                <td>{{tc_doanhsotheokenh.sumTienChiTieuDuocCungKy}}</td>
-                                <td>{{tc_doanhsotheokenh.sumSLDuocCungKy}}</td>
-                                <td>{{tc_doanhsotheokenh.sumDSDuocCungKy}}</td>
-                                <td>{{tc_doanhsotheokenh.sumtyle_cung}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokenh.sumSLChiTieuDuocTrongKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokenh.sumTienChiTieuDuocTrongKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokenh.sumSLDuocTrongKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokenh.sumDSDuocTrongKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokenh.sumtyle_trong)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokenh.sumSLChiTieuDuocCungKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokenh.sumTienChiTieuDuocCungKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokenh.sumSLDuocCungKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokenh.sumDSDuocCungKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokenh.sumtyle_cung)}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -387,11 +387,11 @@
                                 <th>Đã trả</th>
                                 <th class="text-danger">Còn nợ</th>
                                 <th>Trong hạn</th>
-                                <th>Qúa hạn &lt; 30</th>
-                                <th>Qúa hạn &gt;= 30</th>
-                                <th>Qúa hạn &gt;= 60</th>
-                                <th>Qúa hạn &gt;= 90</th>
-                                <th>Qúa hạn &gt;= 120</th>
+                                <th>Quá hạn &lt; 30</th>
+                                <th>Quá hạn &gt;= 30</th>
+                                <th>Quá hạn &gt;= 60</th>
+                                <th>Quá hạn &gt;= 90</th>
+                                <th>Quá hạn &gt;= 120</th>
                             </tr>
                         </thead>
                         <tbody v-for="ds_tonghopcongnos in ds_tonghopcongno">
@@ -399,15 +399,15 @@
                                 <td colspan="9"><strong>{{ds_tonghopcongnos.khu_vuc}}</strong></td>
                             </tr>
                             <tr v-for="ds_chitiet in ds_tonghopcongnos.ds_chitiet">
-                                <td>{{ds_chitiet.tien_hoadon}}</td>
-                                <td>{{ds_chitiet.tien_thanhtoan}}</td>
-                                <td>{{ds_chitiet.tien_conlai}}</td>
-                                <td>{{ds_chitiet.tien_hoadon_tronghan}}</td>
-                                <td>{{ds_chitiet.tien_hoadon_qua30}}</td>
-                                <td>{{ds_chitiet.tien_hoadon_qua60}}</td>
-                                <td>{{ds_chitiet.tien_hoadon_qua90}}</td>
-                                <td>{{ds_chitiet.tien_hoadon_qua120}}</td>
-                                <td>{{ds_chitiet.tien_hoadon_quahon120}}</td>
+                                <td>{{formatNumber(ds_chitiet.tien_hoadon)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tien_thanhtoan)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tien_conlai)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tien_hoadon_tronghan)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tien_hoadon_qua30)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tien_hoadon_qua60)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tien_hoadon_qua90)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tien_hoadon_qua120)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tien_hoadon_quahon120)}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -421,24 +421,24 @@
                                 <th>Đã trả</th>
                                 <th class="text-danger">Còn nợ</th>
                                 <th>Trong hạn</th>
-                                <th>Qúa hạn &lt; 30</th>
-                                <th>Qúa hạn &gt;= 30</th>
-                                <th>Qúa hạn &gt;= 60</th>
-                                <th>Qúa hạn &gt;= 90</th>
-                                <th>Qúa hạn &gt;= 120</th>
+                                <th>Quá hạn &lt; 30</th>
+                                <th>Quá hạn &gt;= 30</th>
+                                <th>Quá hạn &gt;= 60</th>
+                                <th>Quá hạn &gt;= 90</th>
+                                <th>Quá hạn &gt;= 120</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>{{tc_tonghopcongno.sumtien_hoadon}}</td>
-                                <td>{{tc_tonghopcongno.sumtien_thanhtoan}}</td>
-                                <td class="text-danger">{{tc_tonghopcongno.sumtien_conlai}}</td>
-                                <td>{{tc_tonghopcongno.sumtien_hoadon_tronghan}}</td>
-                                <td>{{tc_tonghopcongno.sumtien_hoadon_duoi30}}</td>
-                                <td>{{tc_tonghopcongno.sumtien_hoadon_tren30}}</td>
-                                <td>{{tc_tonghopcongno.sumtien_hoadon_qua60}}</td>
-                                <td>{{tc_tonghopcongno.sumtien_hoadon_qua90}}</td>
-                                <td>{{tc_tonghopcongno.sumtien_hoadon_qua120}}</td>
+                                <td>{{formatNumber(tc_tonghopcongno.sumtien_hoadon)}}</td>
+                                <td>{{formatNumber(tc_tonghopcongno.sumtien_thanhtoan)}}</td>
+                                <td class="text-danger">{{formatNumber(tc_tonghopcongno.sumtien_conlai)}}</td>
+                                <td>{{formatNumber(tc_tonghopcongno.sumtien_hoadon_tronghan)}}</td>
+                                <td>{{formatNumber(tc_tonghopcongno.sumtien_hoadon_duoi30)}}</td>
+                                <td>{{formatNumber(tc_tonghopcongno.sumtien_hoadon_tren30)}}</td>
+                                <td>{{formatNumber(tc_tonghopcongno.sumtien_hoadon_qua60)}}</td>
+                                <td>{{formatNumber(tc_tonghopcongno.sumtien_hoadon_qua90)}}</td>
+                                <td>{{formatNumber(tc_tonghopcongno.sumtien_hoadon_qua120)}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -506,33 +506,33 @@
                             </tr>
                             <tr v-for="ds_chitiet in ds_thongtinthaus.ds_chitiet">
                                 <td>{{ds_chitiet.thang}}</td>
-                                <td>{{ds_chitiet.slThau}}</td>
-                                <td>{{ds_chitiet.tienThau}}</td>
-                                <td>{{ds_chitiet.slThucHien}}</td>
-                                <td>{{ds_chitiet.tienThucHien}}</td>
-                                <td>{{ds_chitiet.slBoThau}}</td>
-                                <td>{{ds_chitiet.tienBoThau}}</td>
-                                <td>{{ds_chitiet.slTonThau}}</td>
-                                <td>{{ds_chitiet.tienTonThau}}</td>
-                                <td>{{ds_chitiet.slThucHienCungKy}}</td>
-                                <td>{{ds_chitiet.tienThucHienCungKy}}</td>
-                                <td>{{ds_chitiet.slBoThauCungKy}}</td>
-                                <td>{{ds_chitiet.tienBoThauCungKy}}</td>
+                                <td>{{formatNumber(ds_chitiet.slThau)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tienThau)}}</td>
+                                <td>{{formatNumber(ds_chitiet.slThucHien)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tienThucHien)}}</td>
+                                <td>{{formatNumber(ds_chitiet.slBoThau)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tienBoThau)}}</td>
+                                <td>{{formatNumber(ds_chitiet.slTonThau)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tienTonThau)}}</td>
+                                <td>{{formatNumber(ds_chitiet.slThucHienCungKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tienThucHienCungKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.slBoThauCungKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tienBoThauCungKy)}}</td>
                             </tr>
                             <tr class="alert alert-info">
                                 <td>TC</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumSLThau}}</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumTienThau}}</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumSLThucHien}}</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumTienThucHien}}</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumSLBoThau}}</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumTienBoThau}}</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumSLTonThau}}</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumTienTonThau}}</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumSLThucHienCungKy}}</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumTienThucHienCungKy}}</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumSLBoThauCungKy}}</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumTienBoThauCungKy}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumSLThau)}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumTienThau)}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumSLThucHien)}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumTienThucHien)}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumSLBoThau)}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumTienBoThau)}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumSLTonThau)}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumTienTonThau)}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumSLThucHienCungKy)}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumTienThucHienCungKy)}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumSLBoThauCungKy)}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumTienBoThauCungKy)}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -566,18 +566,18 @@
                         <tbody>
                             <tr class="alert alert-info">
                                 <td></td>
-                                <td>{{tc_thongtinthau.sumSLThau}}</td>
-                                <td>{{tc_thongtinthau.sumTienThau}}</td>
-                                <td>{{tc_thongtinthau.sumSLThucHien}}</td>
-                                <td>{{tc_thongtinthau.sumTienThucHien}}</td>
-                                <td>{{tc_thongtinthau.sumSLBoThau}}</td>
-                                <td>{{tc_thongtinthau.sumTienBoThau}}</td>
-                                <td>{{tc_thongtinthau.sumSLTonThau}}</td>
-                                <td>{{tc_thongtinthau.sumTienTonThau}}</td>
-                                <td>{{tc_thongtinthau.sumSLThucHienCungKy}}</td>
-                                <td>{{tc_thongtinthau.sumTienThucHienCungKy}}</td>
-                                <td>{{tc_thongtinthau.sumSLBoThauCungKy}}</td>
-                                <td>{{tc_thongtinthau.sumTienBoThauCungKy}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumSLThau)}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumTienThau)}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumSLThucHien)}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumTienThucHien)}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumSLBoThau)}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumTienBoThau)}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumSLTonThau)}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumTienTonThau)}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumSLThucHienCungKy)}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumTienThucHienCungKy)}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumSLBoThauCungKy)}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumTienBoThauCungKy)}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -613,29 +613,29 @@
                             <tr v-for="ds_chitiet in ds_doanhsotheokenhs.ds_chitiet">
                                 <td>{{ds_chitiet.thang}}</td>
                                 <td>{{ds_chitiet.maKhuVuc}}</td>
-                                <td>{{ds_chitiet.slChiTieuDuocTrongKy}}</td>
-                                <td>{{ds_chitiet.tienChiTieuDuocTrongKy}}</td>
-                                <td>{{ds_chitiet.slDuocTrongKy}}</td>
-                                <td>{{ds_chitiet.dsDuocTrongKy}}</td>
-                                <td>{{ds_chitiet.tyle_trong}}</td>
-                                <td>{{ds_chitiet.slChiTieuDuocCungKy}}</td>
-                                <td>{{ds_chitiet.tienChiTieuDuocCungKy}}</td>
-                                <td>{{ds_chitiet.slDuocCungKy}}</td>
-                                <td>{{ds_chitiet.dsDuocCungKy}}</td>
-                                <td>{{ds_chitiet.tyle_cung}}</td>
+                                <td>{{formatNumber(ds_chitiet.slChiTieuDuocTrongKy)}}</td>
+                                <td>{{formatNumber(s_chitiet.tienChiTieuDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.slDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.dsDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tyle_trong)}}</td>
+                                <td>{{formatNumber(ds_chitiet.slChiTieuDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tienChiTieuDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.slDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.dsDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tyle_cung)}}</td>
                             </tr>
                             <tr class="alert alert-info">
                                 <td colspan="2">Tổng</td>
-                                <td>{{ds_doanhsotheokenhs.tong_cong.sumSLChiTieuDuocTrongKy}}</td>
-                                <td>{{ds_doanhsotheokenhs.tong_cong.sumTienChiTieuDuocTrongKy}}</td>
-                                <td>{{ds_doanhsotheokenhs.tong_cong.sumSLDuocTrongKy}}</td>
-                                <td>{{ds_doanhsotheokenhs.tong_cong.sumDSDuocTrongKy}}</td>
-                                <td>{{ds_doanhsotheokenhs.tong_cong.sumtyle_trong}}</td>
-                                <td>{{ds_doanhsotheokenhs.tong_cong.sumSLChiTieuDuocCungKy}}</td>
-                                <td>{{ds_doanhsotheokenhs.tong_cong.sumTienChiTieuDuocCungKy}}</td>
-                                <td>{{ds_doanhsotheokenhs.tong_cong.sumSLDuocCungKy}}</td>
-                                <td>{{ds_doanhsotheokenhs.tong_cong.sumDSDuocCungKy}}</td>
-                                <td>{{ds_doanhsotheokenhs.tong_cong.sumtyle_cung}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokenhs.tong_cong.sumSLChiTieuDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokenhs.tong_cong.sumTienChiTieuDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokenhs.tong_cong.sumSLDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokenhs.tong_cong.sumDSDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokenhs.tong_cong.sumtyle_trong)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokenhs.tong_cong.sumSLChiTieuDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokenhs.tong_cong.sumTienChiTieuDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokenhs.tong_cong.sumSLDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokenhs.tong_cong.sumDSDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokenhs.tong_cong.sumtyle_cung)}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -667,16 +667,16 @@
                         <tbody>
                             <tr class="alert alert-info">
                                 <td colspan="2">Tổng Doanh số theo kênh</td>
-                                <td>{{tc_doanhsotheokenh.sumSLChiTieuDuocTrongKy}}</td>
-                                <td>{{tc_doanhsotheokenh.sumTienChiTieuDuocTrongKy}}</td>
-                                <td>{{tc_doanhsotheokenh.sumSLDuocTrongKy}}</td>
-                                <td>{{tc_doanhsotheokenh.sumDSDuocTrongKy}}</td>
-                                <td>{{tc_doanhsotheokenh.sumtyle_trong}}</td>
-                                <td>{{tc_doanhsotheokenh.sumSLChiTieuDuocCungKy}}</td>
-                                <td>{{tc_doanhsotheokenh.sumTienChiTieuDuocCungKy}}</td>
-                                <td>{{tc_doanhsotheokenh.sumSLDuocCungKy}}</td>
-                                <td>{{tc_doanhsotheokenh.sumDSDuocCungKy}}</td>
-                                <td>{{tc_doanhsotheokenh.sumtyle_cung}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokenh.sumSLChiTieuDuocTrongKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokenh.sumTienChiTieuDuocTrongKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokenh.sumSLDuocTrongKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokenh.sumDSDuocTrongKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokenh.sumtyle_trong)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokenh.sumSLChiTieuDuocCungKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokenh.sumTienChiTieuDuocCungKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokenh.sumSLDuocCungKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokenh.sumDSDuocCungKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokenh.sumtyle_cung)}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -690,11 +690,11 @@
                                 <th>Đã trả</th>
                                 <th class="text-danger">Còn nợ</th>
                                 <th>Trong hạn</th>
-                                <th>Qúa hạn &lt; 30</th>
-                                <th>Qúa hạn &gt;= 30</th>
-                                <th>Qúa hạn &gt;= 60</th>
-                                <th>Qúa hạn &gt;= 90</th>
-                                <th>Qúa hạn &gt;= 120</th>
+                                <th>Quá hạn &lt; 30</th>
+                                <th>Quá hạn &gt;= 30</th>
+                                <th>Quá hạn &gt;= 60</th>
+                                <th>Quá hạn &gt;= 90</th>
+                                <th>Quá hạn &gt;= 120</th>
                             </tr>
                         </thead>
                         <tbody v-for="ds_tonghopcongnos in ds_tonghopcongno">
@@ -702,15 +702,15 @@
                                 <td colspan="9"><strong>{{ds_tonghopcongnos.khu_vuc}}</strong></td>
                             </tr>
                             <tr v-for="ds_chitiet in ds_tonghopcongnos.ds_chitiet">
-                                <td>{{ds_chitiet.tien_hoadon}}</td>
-                                <td>{{ds_chitiet.tien_thanhtoan}}</td>
-                                <td>{{ds_chitiet.tien_conlai}}</td>
-                                <td>{{ds_chitiet.tien_hoadon_tronghan}}</td>
-                                <td>{{ds_chitiet.tien_hoadon_qua30}}</td>
-                                <td>{{ds_chitiet.tien_hoadon_qua60}}</td>
-                                <td>{{ds_chitiet.tien_hoadon_qua90}}</td>
-                                <td>{{ds_chitiet.tien_hoadon_qua120}}</td>
-                                <td>{{ds_chitiet.tien_hoadon_quahon120}}</td>
+                                <td>{{formatNumber(ds_chitiet.tien_hoadon)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tien_thanhtoan)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tien_conlai)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tien_hoadon_tronghan)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tien_hoadon_qua30)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tien_hoadon_qua60)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tien_hoadon_qua90)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tien_hoadon_qua120)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tien_hoadon_quahon120)}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -724,24 +724,24 @@
                                 <th>Đã trả</th>
                                 <th class="text-danger">Còn nợ</th>
                                 <th>Trong hạn</th>
-                                <th>Qúa hạn &lt; 30</th>
-                                <th>Qúa hạn &gt;= 30</th>
-                                <th>Qúa hạn &gt;= 60</th>
-                                <th>Qúa hạn &gt;= 90</th>
-                                <th>Qúa hạn &gt;= 120</th>
+                                <th>Quá hạn &lt; 30</th>
+                                <th>Quá hạn &gt;= 30</th>
+                                <th>Quá hạn &gt;= 60</th>
+                                <th>Quá hạn &gt;= 90</th>
+                                <th>Quá hạn &gt;= 120</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>{{tc_tonghopcongno.sumtien_hoadon}}</td>
-                                <td>{{tc_tonghopcongno.sumtien_thanhtoan}}</td>
-                                <td class="text-danger">{{tc_tonghopcongno.sumtien_conlai}}</td>
-                                <td>{{tc_tonghopcongno.sumtien_hoadon_tronghan}}</td>
-                                <td>{{tc_tonghopcongno.sumtien_hoadon_duoi30}}</td>
-                                <td>{{tc_tonghopcongno.sumtien_hoadon_tren30}}</td>
-                                <td>{{tc_tonghopcongno.sumtien_hoadon_qua60}}</td>
-                                <td>{{tc_tonghopcongno.sumtien_hoadon_qua90}}</td>
-                                <td>{{tc_tonghopcongno.sumtien_hoadon_qua120}}</td>
+                                <td>{{formatNumber(tc_tonghopcongno.sumtien_hoadon)}}</td>
+                                <td>{{formatNumber(tc_tonghopcongno.sumtien_thanhtoan)}}</td>
+                                <td class="text-danger">{{formatNumber(tc_tonghopcongno.sumtien_conlai)}}</td>
+                                <td>{{formatNumber(tc_tonghopcongno.sumtien_hoadon_tronghan)}}</td>
+                                <td>{{formatNumber(tc_tonghopcongno.sumtien_hoadon_duoi30)}}</td>
+                                <td>{{formatNumber(tc_tonghopcongno.sumtien_hoadon_tren30)}}</td>
+                                <td>{{formatNumber(tc_tonghopcongno.sumtien_hoadon_qua60)}}</td>
+                                <td>{{formatNumber(tc_tonghopcongno.sumtien_hoadon_qua90)}}</td>
+                                <td>{{formatNumber(tc_tonghopcongno.sumtien_hoadon_qua120)}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -798,33 +798,33 @@
                             </tr>
                             <tr v-for="ds_chitiet in ds_thongtinthaus.ds_chitiet">
                                 <td>{{ds_chitiet.thang}}</td>
-                                <td>{{ds_chitiet.slThau}}</td>
-                                <td>{{ds_chitiet.tienThau}}</td>
-                                <td>{{ds_chitiet.slThucHien}}</td>
-                                <td>{{ds_chitiet.tienThucHien}}</td>
-                                <td>{{ds_chitiet.slBoThau}}</td>
-                                <td>{{ds_chitiet.tienBoThau}}</td>
-                                <td>{{ds_chitiet.slTonThau}}</td>
-                                <td>{{ds_chitiet.tienTonThau}}</td>
-                                <td>{{ds_chitiet.slThucHienCungKy}}</td>
-                                <td>{{ds_chitiet.tienThucHienCungKy}}</td>
-                                <td>{{ds_chitiet.slBoThauCungKy}}</td>
-                                <td>{{ds_chitiet.tienBoThauCungKy}}</td>
+                                <td>{{formatNumber(ds_chitiet.slThau)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tienThau)}}</td>
+                                <td>{{formatNumber(ds_chitiet.slThucHien)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tienThucHien)}}</td>
+                                <td>{{formatNumber(ds_chitiet.slBoThau)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tienBoThau)}}</td>
+                                <td>{{formatNumber(ds_chitiet.slTonThau)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tienTonThau)}}</td>
+                                <td>{{formatNumber(ds_chitiet.slThucHienCungKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tienThucHienCungKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.slBoThauCungKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tienBoThauCungKy)}}</td>
                             </tr>
                             <tr class="alert alert-info">
                                 <td>TC</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumSLThau}}</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumTienThau}}</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumSLThucHien}}</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumTienThucHien}}</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumSLBoThau}}</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumTienBoThau}}</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumSLTonThau}}</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumTienTonThau}}</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumSLThucHienCungKy}}</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumTienThucHienCungKy}}</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumSLBoThauCungKy}}</td>
-                                <td>{{ds_thongtinthaus.tong_cong.sumTienBoThauCungKy}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumSLThau)}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumTienThau)}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumSLThucHien)}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumTienThucHien)}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumSLBoThau)}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumTienBoThau)}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumSLTonThau)}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumTienTonThau)}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumSLThucHienCungKy)}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumTienThucHienCungKy)}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumSLBoThauCungKy)}}</td>
+                                <td>{{formatNumber(ds_thongtinthaus.tong_cong.sumTienBoThauCungKy)}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -858,18 +858,18 @@
                         <tbody>
                             <tr class="alert alert-info">
                                 <td></td>
-                                <td>{{tc_thongtinthau.sumSLThau}}</td>
-                                <td>{{tc_thongtinthau.sumTienThau}}</td>
-                                <td>{{tc_thongtinthau.sumSLThucHien}}</td>
-                                <td>{{tc_thongtinthau.sumTienThucHien}}</td>
-                                <td>{{tc_thongtinthau.sumSLBoThau}}</td>
-                                <td>{{tc_thongtinthau.sumTienBoThau}}</td>
-                                <td>{{tc_thongtinthau.sumSLTonThau}}</td>
-                                <td>{{tc_thongtinthau.sumTienTonThau}}</td>
-                                <td>{{tc_thongtinthau.sumSLThucHienCungKy}}</td>
-                                <td>{{tc_thongtinthau.sumTienThucHienCungKy}}</td>
-                                <td>{{tc_thongtinthau.sumSLBoThauCungKy}}</td>
-                                <td>{{tc_thongtinthau.sumTienBoThauCungKy}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumSLThau)}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumTienThau)}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumSLThucHien)}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumTienThucHien)}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumSLBoThau)}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumTienBoThau)}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumSLTonThau)}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumTienTonThau)}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumSLThucHienCungKy)}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumTienThucHienCungKy)}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumSLBoThauCungKy)}}</td>
+                                <td>{{formatNumber(tc_thongtinthau.sumTienBoThauCungKy)}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -905,29 +905,29 @@
                             <tr v-for="ds_chitiet in ds_doanhsotheokenhs.ds_chitiet">
                                 <td>{{ds_chitiet.thang}}</td>
                                 <td>{{ds_chitiet.maKhuVuc}}</td>
-                                <td>{{ds_chitiet.slChiTieuDuocTrongKy}}</td>
-                                <td>{{ds_chitiet.tienChiTieuDuocTrongKy}}</td>
-                                <td>{{ds_chitiet.slDuocTrongKy}}</td>
-                                <td>{{ds_chitiet.dsDuocTrongKy}}</td>
-                                <td>{{ds_chitiet.tyle_trong}}</td>
-                                <td>{{ds_chitiet.slChiTieuDuocCungKy}}</td>
-                                <td>{{ds_chitiet.tienChiTieuDuocCungKy}}</td>
-                                <td>{{ds_chitiet.slDuocCungKy}}</td>
-                                <td>{{ds_chitiet.dsDuocCungKy}}</td>
-                                <td>{{ds_chitiet.tyle_cung}}</td>
+                                <td>{{formatNumber(ds_chitiet.slChiTieuDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tienChiTieuDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.slDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.dsDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tyle_trong)}}</td>
+                                <td>{{formatNumber(ds_chitiet.slChiTieuDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tienChiTieuDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.slDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.dsDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tyle_cung)}}</td>
                             </tr>
                             <tr class="alert alert-info">
                                 <td colspan="2">Tổng</td>
-                                <td>{{ds_doanhsotheokenhs.tong_cong.sumSLChiTieuDuocTrongKy}}</td>
-                                <td>{{ds_doanhsotheokenhs.tong_cong.sumTienChiTieuDuocTrongKy}}</td>
-                                <td>{{ds_doanhsotheokenhs.tong_cong.sumSLDuocTrongKy}}</td>
-                                <td>{{ds_doanhsotheokenhs.tong_cong.sumDSDuocTrongKy}}</td>
-                                <td>{{ds_doanhsotheokenhs.tong_cong.sumtyle_trong}}</td>
-                                <td>{{ds_doanhsotheokenhs.tong_cong.sumSLChiTieuDuocCungKy}}</td>
-                                <td>{{ds_doanhsotheokenhs.tong_cong.sumTienChiTieuDuocCungKy}}</td>
-                                <td>{{ds_doanhsotheokenhs.tong_cong.sumSLDuocCungKy}}</td>
-                                <td>{{ds_doanhsotheokenhs.tong_cong.sumDSDuocCungKy}}</td>
-                                <td>{{ds_doanhsotheokenhs.tong_cong.sumtyle_cung}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokenhs.tong_cong.sumSLChiTieuDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokenhs.tong_cong.sumTienChiTieuDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokenhs.tong_cong.sumSLDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokenhs.tong_cong.sumDSDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokenhs.tong_cong.sumtyle_trong)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokenhs.tong_cong.sumSLChiTieuDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokenhs.tong_cong.sumTienChiTieuDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokenhs.tong_cong.sumSLDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokenhs.tong_cong.sumDSDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokenhs.tong_cong.sumtyle_cung)}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -959,16 +959,16 @@
                         <tbody>
                             <tr class="alert alert-info">
                                 <td colspan="2">Tổng Doanh số theo kênh</td>
-                                <td>{{tc_doanhsotheokenh.sumSLChiTieuDuocTrongKy}}</td>
-                                <td>{{tc_doanhsotheokenh.sumTienChiTieuDuocTrongKy}}</td>
-                                <td>{{tc_doanhsotheokenh.sumSLDuocTrongKy}}</td>
-                                <td>{{tc_doanhsotheokenh.sumDSDuocTrongKy}}</td>
-                                <td>{{tc_doanhsotheokenh.sumtyle_trong}}</td>
-                                <td>{{tc_doanhsotheokenh.sumSLChiTieuDuocCungKy}}</td>
-                                <td>{{tc_doanhsotheokenh.sumTienChiTieuDuocCungKy}}</td>
-                                <td>{{tc_doanhsotheokenh.sumSLDuocCungKy}}</td>
-                                <td>{{tc_doanhsotheokenh.sumDSDuocCungKy}}</td>
-                                <td>{{tc_doanhsotheokenh.sumtyle_cung}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokenh.sumSLChiTieuDuocTrongKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokenh.sumTienChiTieuDuocTrongKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokenh.sumSLDuocTrongKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokenh.sumDSDuocTrongKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokenh.sumtyle_trong)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokenh.sumSLChiTieuDuocCungKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokenh.sumTienChiTieuDuocCungKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokenh.sumSLDuocCungKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokenh.sumDSDuocCungKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokenh.sumtyle_cung)}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -1004,29 +1004,29 @@
                             <tr v-for="ds_chitiet in ds_doanhsotheokhachhangs.ds_chitiet">
                                 <td>{{ds_chitiet.thang}}</td>
                                 <td>{{ds_chitiet.maKhuVuc}}</td>
-                                <td>{{ds_chitiet.slChiTieuDuocTrongKy}}</td>
-                                <td>{{ds_chitiet.tienChiTieuDuocTrongKy}}</td>
-                                <td>{{ds_chitiet.slDuocTrongKy}}</td>
-                                <td>{{ds_chitiet.dsDuocTrongKy}}</td>
-                                <td>{{ds_chitiet.tyle_trong}}</td>
-                                <td>{{ds_chitiet.slChiTieuDuocCungKy}}</td>
-                                <td>{{ds_chitiet.tienChiTieuDuocCungKy}}</td>
-                                <td>{{ds_chitiet.slDuocCungKy}}</td>
-                                <td>{{ds_chitiet.dsDuocCungKy}}</td>
-                                <td>{{ds_chitiet.tyle_cung}}</td>
+                                <td>{{formatNumber(ds_chitiet.slChiTieuDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tienChiTieuDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.slDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.dsDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tyle_trong)}}</td>
+                                <td>{{formatNumber(ds_chitiet.slChiTieuDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tienChiTieuDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.slDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.dsDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tyle_cung)}}</td>
                             </tr>
                             <tr class="alert alert-info">
                                 <td colspan="2">Tổng</td>
-                                <td>{{ds_doanhsotheokhachhangs.tong_cong.sumSLChiTieuDuocTrongKy}}</td>
-                                <td>{{ds_doanhsotheokhachhangs.tong_cong.sumTienChiTieuDuocTrongKy}}</td>
-                                <td>{{ds_doanhsotheokhachhangs.tong_cong.sumSLDuocTrongKy}}</td>
-                                <td>{{ds_doanhsotheokhachhangs.tong_cong.sumDSDuocTrongKy}}</td>
-                                <td>{{ds_doanhsotheokhachhangs.tong_cong.sumtyle_trong}}</td>
-                                <td>{{ds_doanhsotheokhachhangs.tong_cong.sumSLChiTieuDuocCungKy}}</td>
-                                <td>{{ds_doanhsotheokhachhangs.tong_cong.sumTienChiTieuDuocCungKy}}</td>
-                                <td>{{ds_doanhsotheokhachhangs.tong_cong.sumSLDuocCungKy}}</td>
-                                <td>{{ds_doanhsotheokhachhangs.tong_cong.sumDSDuocCungKy}}</td>
-                                <td>{{ds_doanhsotheokhachhangs.tong_cong.sumtyle_cung}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokhachhangs.tong_cong.sumSLChiTieuDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokhachhangs.tong_cong.sumTienChiTieuDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokhachhangs.tong_cong.sumSLDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokhachhangs.tong_cong.sumDSDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokhachhangs.tong_cong.sumtyle_trong)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokhachhangs.tong_cong.sumSLChiTieuDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokhachhangs.tong_cong.sumTienChiTieuDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokhachhangs.tong_cong.sumSLDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokhachhangs.tong_cong.sumDSDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheokhachhangs.tong_cong.sumtyle_cung)}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -1058,16 +1058,16 @@
                         <tbody>
                             <tr>
                                 <td colspan="2">Tổng Doanh số theo khách hàng</td>
-                                <td>{{tc_doanhsotheokhachhang.sumSLChiTieuDuocTrongKy}}</td>
-                                <td>{{tc_doanhsotheokhachhang.sumTienChiTieuDuocTrongKy}}</td>
-                                <td>{{tc_doanhsotheokhachhang.sumSLDuocTrongKy}}</td>
-                                <td>{{tc_doanhsotheokhachhang.sumDSDuocTrongKy}}</td>
-                                <td>{{tc_doanhsotheokhachhang.sumtyle_trong}}</td>
-                                <td>{{tc_doanhsotheokhachhang.sumSLChiTieuDuocCungKy}}</td>
-                                <td>{{tc_doanhsotheokhachhang.sumTienChiTieuDuocCungKy}}</td>
-                                <td>{{tc_doanhsotheokhachhang.sumSLDuocCungKy}}</td>
-                                <td>{{tc_doanhsotheokhachhang.sumDSDuocCungKy}}</td>
-                                <td>{{tc_doanhsotheokhachhang.sumtyle_cung}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokhachhang.sumSLChiTieuDuocTrongKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokhachhang.sumTienChiTieuDuocTrongKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokhachhang.sumSLDuocTrongKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokhachhang.sumDSDuocTrongKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokhachhang.sumtyle_trong)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokhachhang.sumSLChiTieuDuocCungKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokhachhang.sumTienChiTieuDuocCungKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokhachhang.sumSLDuocCungKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokhachhang.sumDSDuocCungKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheokhachhang.sumtyle_cung)}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -1103,29 +1103,29 @@
                             <tr v-for="ds_chitiet in ds_doanhsotheosanphams.ds_chitiet">
                                 <td>{{ds_chitiet.thang}}</td>
                                 <td>{{ds_chitiet.maKhuVuc}}</td>
-                                <td>{{ds_chitiet.slChiTieuDuocTrongKy}}</td>
-                                <td>{{ds_chitiet.tienChiTieuDuocTrongKy}}</td>
-                                <td>{{ds_chitiet.slDuocTrongKy}}</td>
-                                <td>{{ds_chitiet.dsDuocTrongKy}}</td>
-                                <td>{{ds_chitiet.tyle_trong}}</td>
-                                <td>{{ds_chitiet.slChiTieuDuocCungKy}}</td>
-                                <td>{{ds_chitiet.tienChiTieuDuocCungKy}}</td>
-                                <td>{{ds_chitiet.slDuocCungKy}}</td>
-                                <td>{{ds_chitiet.dsDuocCungKy}}</td>
-                                <td>{{ds_chitiet.tyle_cung}}</td>
+                                <td>{{formatNumber(ds_chitiet.slChiTieuDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tienChiTieuDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.slDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.dsDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tyle_trong)}}</td>
+                                <td>{{formatNumber(ds_chitiet.slChiTieuDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tienChiTieuDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.slDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.dsDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tyle_cung)}}</td>
                             </tr>
                             <tr class="alert alert-info">
                                 <td colspan="2">Tổng</td>
-                                <td>{{ds_doanhsotheosanphams.tong_cong.sumSLChiTieuDuocTrongKy}}</td>
-                                <td>{{ds_doanhsotheosanphams.tong_cong.sumTienChiTieuDuocTrongKy}}</td>
-                                <td>{{ds_doanhsotheosanphams.tong_cong.sumSLDuocTrongKy}}</td>
-                                <td>{{ds_doanhsotheosanphams.tong_cong.sumDSDuocTrongKy}}</td>
-                                <td>{{ds_doanhsotheosanphams.tong_cong.sumtyle_trong}}</td>
-                                <td>{{ds_doanhsotheosanphams.tong_cong.sumSLChiTieuDuocCungKy}}</td>
-                                <td>{{ds_doanhsotheosanphams.tong_cong.sumTienChiTieuDuocCungKy}}</td>
-                                <td>{{ds_doanhsotheosanphams.tong_cong.sumSLDuocCungKy}}</td>
-                                <td>{{ds_doanhsotheosanphams.tong_cong.sumDSDuocCungKy}}</td>
-                                <td>{{ds_doanhsotheosanphams.tong_cong.sumtyle_cung}}</td>
+                                <td>{{formatNumber(ds_doanhsotheosanphams.tong_cong.sumSLChiTieuDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheosanphams.tong_cong.sumTienChiTieuDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheosanphams.tong_cong.sumSLDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheosanphams.tong_cong.sumDSDuocTrongKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheosanphams.tong_cong.sumtyle_trong)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheosanphams.tong_cong.sumSLChiTieuDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheosanphams.tong_cong.sumTienChiTieuDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheosanphams.tong_cong.sumSLDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheosanphams.tong_cong.sumDSDuocCungKy)}}</td>
+                                <td>{{formatNumber(ds_doanhsotheosanphams.tong_cong.sumtyle_cung)}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -1157,16 +1157,16 @@
                         <tbody>
                             <tr>
                                 <td colspan="2">Tổng Doanh số theo sản phẩm</td>
-                                <td>{{tc_doanhsotheosanpham.sumSLChiTieuDuocTrongKy}}</td>
-                                <td>{{tc_doanhsotheosanpham.sumTienChiTieuDuocTrongKy}}</td>
-                                <td>{{tc_doanhsotheosanpham.sumSLDuocTrongKy}}</td>
-                                <td>{{tc_doanhsotheosanpham.sumDSDuocTrongKy}}</td>
-                                <td>{{tc_doanhsotheosanpham.sumtyle_trong}}</td>
-                                <td>{{tc_doanhsotheosanpham.sumSLChiTieuDuocCungKy}}</td>
-                                <td>{{tc_doanhsotheosanpham.sumTienChiTieuDuocCungKy}}</td>
-                                <td>{{tc_doanhsotheosanpham.sumSLDuocCungKy}}</td>
-                                <td>{{tc_doanhsotheosanpham.sumDSDuocCungKy}}</td>
-                                <td>{{tc_doanhsotheosanpham.sumtyle_cung}}</td>
+                                <td>{{formatNumber(tc_doanhsotheosanpham.sumSLChiTieuDuocTrongKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheosanpham.sumTienChiTieuDuocTrongKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheosanpham.sumSLDuocTrongKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheosanpham.sumDSDuocTrongKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheosanpham.sumtyle_trong)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheosanpham.sumSLChiTieuDuocCungKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheosanpham.sumTienChiTieuDuocCungKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheosanpham.sumSLDuocCungKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheosanpham.sumDSDuocCungKy)}}</td>
+                                <td>{{formatNumber(tc_doanhsotheosanpham.sumtyle_cung)}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -1180,11 +1180,11 @@
                                 <th>Đã trả</th>
                                 <th class="text-danger">Còn nợ</th>
                                 <th>Trong hạn</th>
-                                <th>Qúa hạn &lt; 30</th>
-                                <th>Qúa hạn &gt;= 30</th>
-                                <th>Qúa hạn &gt;= 60</th>
-                                <th>Qúa hạn &gt;= 90</th>
-                                <th>Qúa hạn &gt;= 120</th>
+                                <th>Quá hạn &lt; 30</th>
+                                <th>Quá hạn &gt;= 30</th>
+                                <th>Quá hạn &gt;= 60</th>
+                                <th>Quá hạn &gt;= 90</th>
+                                <th>Quá hạn &gt;= 120</th>
                             </tr>
                         </thead>
                         <tbody v-for="ds_tonghopcongnos in ds_tonghopcongno">
@@ -1192,15 +1192,15 @@
                                 <td colspan="9"><strong>{{ds_tonghopcongnos.khu_vuc}}</strong></td>
                             </tr>
                             <tr v-for="ds_chitiet in ds_tonghopcongnos.ds_chitiet">
-                                <td>{{ds_chitiet.tien_hoadon}}</td>
-                                <td>{{ds_chitiet.tien_thanhtoan}}</td>
-                                <td class="text-danger">{{ds_chitiet.tien_conlai}}</td>
-                                <td>{{ds_chitiet.tien_hoadon_tronghan}}</td>
-                                <td>{{ds_chitiet.tien_hoadon_qua30}}</td>
-                                <td>{{ds_chitiet.tien_hoadon_qua60}}</td>
-                                <td>{{ds_chitiet.tien_hoadon_qua90}}</td>
-                                <td>{{ds_chitiet.tien_hoadon_qua120}}</td>
-                                <td>{{ds_chitiet.tien_hoadon_quahon120}}</td>
+                                <td>{{formatNumber(ds_chitiet.tien_hoadon)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tien_thanhtoan)}}</td>
+                                <td class="text-danger">{{formatNumber(ds_chitiet.tien_conlai)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tien_hoadon_tronghan)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tien_hoadon_qua30)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tien_hoadon_qua60)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tien_hoadon_qua90)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tien_hoadon_qua120)}}</td>
+                                <td>{{formatNumber(ds_chitiet.tien_hoadon_quahon120)}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -1214,24 +1214,24 @@
                                 <th>Đã trả</th>
                                 <th class="text-danger">Còn nợ</th>
                                 <th>Trong hạn</th>
-                                <th>Qúa hạn &lt; 30</th>
-                                <th>Qúa hạn &gt;= 30</th>
-                                <th>Qúa hạn &gt;= 60</th>
-                                <th>Qúa hạn &gt;= 90</th>
-                                <th>Qúa hạn &gt;= 120</th>
+                                <th>Quá hạn &lt; 30</th>
+                                <th>Quá hạn &gt;= 30</th>
+                                <th>Quá hạn &gt;= 60</th>
+                                <th>Quá hạn &gt;= 90</th>
+                                <th>Quá hạn &gt;= 120</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>{{tc_tonghopcongno.sumtien_hoadon}}</td>
-                                <td>{{tc_tonghopcongno.sumtien_thanhtoan}}</td>
-                                <td class="text-danger">{{tc_tonghopcongno.sumtien_conlai}}</td>
-                                <td>{{tc_tonghopcongno.sumtien_hoadon_tronghan}}</td>
-                                <td>{{tc_tonghopcongno.sumtien_hoadon_duoi30}}</td>
-                                <td>{{tc_tonghopcongno.sumtien_hoadon_tren30}}</td>
-                                <td>{{tc_tonghopcongno.sumtien_hoadon_qua60}}</td>
-                                <td>{{tc_tonghopcongno.sumtien_hoadon_qua90}}</td>
-                                <td>{{tc_tonghopcongno.sumtien_hoadon_qua120}}</td>
+                                <td>{{formatNumber(tc_tonghopcongno.sumtien_hoadon)}}</td>
+                                <td>{{formatNumber(tc_tonghopcongno.sumtien_thanhtoan)}}</td>
+                                <td class="text-danger">{{formatNumber(tc_tonghopcongno.sumtien_conlai)}}</td>
+                                <td>{{formatNumber(tc_tonghopcongno.sumtien_hoadon_tronghan)}}</td>
+                                <td>{{formatNumber(tc_tonghopcongno.sumtien_hoadon_duoi30)}}</td>
+                                <td>{{formatNumber(tc_tonghopcongno.sumtien_hoadon_tren30)}}</td>
+                                <td>{{formatNumber(tc_tonghopcongno.sumtien_hoadon_qua60)}}</td>
+                                <td>{{formatNumber(tc_tonghopcongno.sumtien_hoadon_qua90)}}</td>
+                                <td>{{formatNumber(tc_tonghopcongno.sumtien_hoadon_qua120)}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -1317,6 +1317,13 @@ export default {
                     console.error(error);
                 });
         };
+        const formatNumber = (value) => {
+            if (value !== undefined && value !== null) {
+                return value.toLocaleString();
+            } else {
+                return '';
+            }
+        };
         const getCurrentYearDates = () => {
             const today = new Date();
             const currentYear = today.getFullYear();
@@ -1375,7 +1382,6 @@ export default {
                     tc_doanhsotheokhachhang.value = response.data.tc_doanhsotheokhachhang;
                     ds_doanhsotheosanpham.value = response.data.ds_doanhsotheosanpham;
                     tc_doanhsotheosanpham.value = response.data.tc_doanhsotheosanpham;
-                    console.log(ds_doanhsotheokhachhang.value);
                 })
                 .catch((error) => {
                     console.log(error);
@@ -1419,7 +1425,8 @@ export default {
             ds_doanhsotheokhachhang,
             tc_doanhsotheokhachhang,
             ds_doanhsotheosanpham,
-            tc_doanhsotheosanpham
+            tc_doanhsotheosanpham,
+            formatNumber,
         };
     },
 };

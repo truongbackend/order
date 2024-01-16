@@ -49,119 +49,119 @@
     <div class="col-sm-2 col-md-2 mt-3">
         <div class="card">
             <div class="card-body"><span class="fw-semibold d-block mb-1">Dự nợ đầu kỳ</span>
-                <h6 class="card-title mb-2">{{ ds_congnochung.duno_dauky}} đ</h6>
+                <h6 class="card-title mb-2">{{ formatNumber(ds_congnochung.duno_dauky)}} đ</h6>
             </div>
         </div>
     </div>
     <div class="col-sm-2 col-md-2 mt-3">
         <div class="card">
             <div class="card-body"><span class="fw-semibold d-block mb-1">Phát sinh trong kỳ</span>
-                <h6 class="card-title mb-2">{{ ds_congnochung.phatsinh_trongky}} đ</h6>
+                <h6 class="card-title mb-2">{{ formatNumber(ds_congnochung.phatsinh_trongky)}} đ</h6>
             </div>
         </div>
     </div>
     <div class="col-sm-2 col-md-2 mt-3">
         <div class="card">
             <div class="card-body"><span class="fw-semibold d-block mb-1">Thu trong kỳ</span>
-                <h6 class="card-title mb-2">{{ ds_congnochung.thu_trongky}} đ</h6>
+                <h6 class="card-title mb-2">{{ formatNumber(ds_congnochung.thu_trongky)}} đ</h6>
             </div>
         </div>
     </div>
     <div class="col-sm-2 col-md-2 mt-3">
         <div class="card">
             <div class="card-body"><span class="fw-semibold d-block mb-1">Nợ cuối kỳ</span>
-                <h6 class="card-title mb-2">{{ ds_congnochung.no_cuoiky}} đ</h6>
+                <h6 class="card-title mb-2">{{ formatNumber(ds_congnochung.no_cuoiky)}} đ</h6>
             </div>
         </div>
     </div>
     <div class="col-sm-2 col-md-2 mt-3">
         <div class="card">
             <div class="card-body"><span class="fw-semibold d-block mb-1">Trong hạn</span>
-                <h6 class="card-title mb-2">{{ ds_congnochung.trong_han}} đ</h6>
+                <h6 class="card-title mb-2">{{ formatNumber(ds_congnochung.trong_han)}} đ</h6>
             </div>
         </div>
     </div>
     <div class="col-sm-2 col-md-2 mt-3">
         <div class="card">
-            <div class="card-body"><span class="fw-semibold d-block mb-1">Qúa hạn 30</span>
-                <h6 class="card-title mb-2">{{ ds_congnochung.quahan_30}} đ</h6>
+            <div class="card-body"><span class="fw-semibold d-block mb-1">Quá hạn 30</span>
+                <h6 class="card-title mb-2">{{ formatNumber(ds_congnochung.quahan_30)}} đ</h6>
             </div>
         </div>
     </div>
     <div class="col-sm-2 col-md-2 mt-3">
         <div class="card">
-            <div class="card-body"><span class="fw-semibold d-block mb-1">Qúa hạn 60</span>
-                <h6 class="card-title mb-2">{{ ds_congnochung.quahan_60}} đ</h6>
+            <div class="card-body"><span class="fw-semibold d-block mb-1">Quá hạn 60</span>
+                <h6 class="card-title mb-2">{{ formatNumber(ds_congnochung.quahan_60)}} đ</h6>
             </div>
         </div>
     </div>
     <div class="col-sm-2 col-md-2 mt-3">
         <div class="card">
-            <div class="card-body"><span class="fw-semibold d-block mb-1">Qúa hạn 90</span>
-                <h6 class="card-title mb-2">{{ ds_congnochung.quahan_90}} đ</h6>
+            <div class="card-body"><span class="fw-semibold d-block mb-1">Quá hạn 90</span>
+                <h6 class="card-title mb-2">{{ formatNumber(ds_congnochung.quahan_90)}} đ</h6>
             </div>
         </div>
     </div>
     <div class="col-sm-2 col-md-2 mt-3">
         <div class="card">
-            <div class="card-body"><span class="fw-semibold d-block mb-1">Qúa hạn >90</span>
-                <h6 class="card-title mb-2">{{ ds_congnochung.quahan_120}} đ</h6>
+            <div class="card-body"><span class="fw-semibold d-block mb-1">Quá hạn >90</span>
+                <h6 class="card-title mb-2">{{ formatNumber(ds_congnochung.quahan_120)}} đ</h6>
             </div>
         </div>
     </div>
     <div class="col-sm-2 col-md-2 mt-3">
         <div class="card">
             <div class="card-body"><span class="fw-semibold d-block mb-1">Phát sinh cùng kỳ</span>
-                <h6 class="card-title mb-2">{{ ds_congnochung.phatsinh_cungky}} đ</h6>
+                <h6 class="card-title mb-2">{{ formatNumber(ds_congnochung.phatsinh_cungky)}} đ</h6>
             </div>
         </div>
     </div>
     <div class="col-sm-2 col-md-2 mt-3">
         <div class="card">
             <div class="card-body"><span class="fw-semibold d-block mb-1">TT cùng kỳ</span>
-                <h6 class="card-title mb-2">{{ ds_congnochung.no_c_ttcungky}} %</h6>
+                <h6 class="card-title mb-2">{{ formatNumber(ds_congnochung.no_c_ttcungky)}} %</h6>
             </div>
         </div>
     </div>
     <div class="col-sm-2 col-md-2 mt-3">
         <div class="card">
             <div class="card-body"><span class="fw-semibold d-block mb-1">Thu cùng kỳ</span>
-                <h6 class="card-title mb-2">{{ ds_congnochung.thu_cungky}} đ</h6>
+                <h6 class="card-title mb-2">{{ formatNumber(ds_congnochung.thu_cungky)}} đ</h6>
             </div>
         </div>
     </div>
     <div class="col-sm-2 col-md-2 mt-3">
         <div class="card">
             <div class="card-body"><span class="fw-semibold d-block mb-1">TT cùng kỳ</span>
-                <h6 class="card-title mb-2">{{ ds_congnochung.co_c_ttcungky}} %</h6>
+                <h6 class="card-title mb-2">{{ formatNumber(ds_congnochung.co_c_ttcungky)}} %</h6>
             </div>
         </div>
     </div>
     <div class="col-sm-2 col-md-2 mt-3">
         <div class="card">
             <div class="card-body"><span class="fw-semibold d-block mb-1">Phát sinh năm trước</span>
-                <h6 class="card-title mb-2">{{ ds_congnochung.phatsinh_namtruoc}} đ</h6>
+                <h6 class="card-title mb-2">{{ formatNumber(ds_congnochung.phatsinh_namtruoc)}} đ</h6>
             </div>
         </div>
     </div>
     <div class="col-sm-2 col-md-2 mt-3">
         <div class="card">
             <div class="card-body"><span class="fw-semibold d-block mb-1">TT so với năm trước</span>
-                <h6 class="card-title mb-2">{{ ds_congnochung.quahan30_ttsovoinamtruoc}} %</h6>
+                <h6 class="card-title mb-2">{{ formatNumber(ds_congnochung.quahan30_ttsovoinamtruoc)}} %</h6>
             </div>
         </div>
     </div>
     <div class="col-sm-2 col-md-2 mt-3">
         <div class="card">
             <div class="card-body"><span class="fw-semibold d-block mb-1">Thu năm trước</span>
-                <h6 class="card-title mb-2">{{ ds_congnochung.thu_namtruoc}} đ</h6>
+                <h6 class="card-title mb-2">{{ formatNumber(ds_congnochung.thu_namtruoc)}} đ</h6>
             </div>
         </div>
     </div>
     <div class="col-sm-2 col-md-2 mt-3">
         <div class="card">
             <div class="card-body"><span class="fw-semibold d-block mb-1">TT so với năm trước</span>
-                <h6 class="card-title mb-2">{{ ds_congnochung.quahan90_ttsovoinamtruoc}} %</h6>
+                <h6 class="card-title mb-2">{{ formatNumber(ds_congnochung.quahan90_ttsovoinamtruoc)}} %</h6>
             </div>
         </div>
     </div>
@@ -198,18 +198,18 @@
                         <tbody>
                             <tr v-for="(ds_congnotheoloais, index) in ds_congnotheoloai" :key="index">
                                 <td>{{ ds_congnotheoloais.ten }}</td>
-                                <td>{{ ds_congnotheoloais.no_dauky }}</td>
-                                <td>{{ ds_congnotheoloais.ps_trongky }}</td>
-                                <td>{{ ds_congnotheoloais.no_c_ttcungky }}</td>
-                                <td>{{ ds_congnotheoloais.thu_trongky }}</td>
-                                <td>{{ ds_congnotheoloais.co_c_ttcungky }}</td>
-                                <td>{{ ds_congnotheoloais.no_cuoiky }}</td>
-                                <td>{{ ds_congnotheoloais.tytrong }}</td>
-                                <td>{{ ds_congnotheoloais.no_tronghan }}</td>
-                                <td>{{ ds_congnotheoloais.quahan_30ngay }}</td>
-                                <td>{{ ds_congnotheoloais.quahan_60ngay }}</td>
-                                <td>{{ ds_congnotheoloais.quahan_90ngay }}</td>
-                                <td>{{ ds_congnotheoloais.quahan_120ngay }}</td>
+                                <td>{{ formatNumber(ds_congnotheoloais.no_dauky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheoloais.ps_trongky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheoloais.no_c_ttcungky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheoloais.thu_trongky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheoloais.co_c_ttcungky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheoloais.no_cuoiky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheoloais.tytrong) }}</td>
+                                <td>{{ formatNumber(ds_congnotheoloais.no_tronghan) }}</td>
+                                <td>{{ formatNumber(ds_congnotheoloais.quahan_30ngay) }}</td>
+                                <td>{{ formatNumber(ds_congnotheoloais.quahan_60ngay) }}</td>
+                                <td>{{ formatNumber(ds_congnotheoloais.quahan_90ngay) }}</td>
+                                <td>{{ formatNumber(ds_congnotheoloais.quahan_120ngay) }}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -245,18 +245,18 @@
                         <tbody>
                             <tr v-for="(ds_congnotheokenh, index) in ds_congnotheokenh" :key="index">
                                 <td>{{ ds_congnotheokenh.ten }}</td>
-                                <td>{{ ds_congnotheokenh.no_dauky }}</td>
-                                <td>{{ ds_congnotheokenh.ps_trongky }}</td>
-                                <td>{{ ds_congnotheokenh.no_c_ttcungky }}</td>
-                                <td>{{ ds_congnotheokenh.thu_trongky }}</td>
-                                <td>{{ ds_congnotheokenh.co_c_ttcungky }}</td>
-                                <td>{{ ds_congnotheokenh.no_cuoiky }}</td>
-                                <td>{{ ds_congnotheokenh.tytrong }}</td>
-                                <td>{{ ds_congnotheokenh.no_tronghan }}</td>
-                                <td>{{ ds_congnotheokenh.quahan_30ngay }}</td>
-                                <td>{{ ds_congnotheokenh.quahan_60ngay }}</td>
-                                <td>{{ ds_congnotheokenh.quahan_90ngay }}</td>
-                                <td>{{ ds_congnotheokenh.quahan_120ngay }}</td>
+                                <td>{{ formatNumber(ds_congnotheokenh.no_dauky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheokenh.ps_trongky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheokenh.no_c_ttcungky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheokenh.thu_trongky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheokenh.co_c_ttcungky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheokenh.no_cuoiky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheokenh.tytrong) }}</td>
+                                <td>{{ formatNumber(ds_congnotheokenh.no_tronghan) }}</td>
+                                <td>{{ formatNumber(ds_congnotheokenh.quahan_30ngay) }}</td>
+                                <td>{{ formatNumber(ds_congnotheokenh.quahan_60ngay) }}</td>
+                                <td>{{ formatNumber(ds_congnotheokenh.quahan_90ngay) }}</td>
+                                <td>{{ formatNumber(ds_congnotheokenh.quahan_120ngay) }}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -341,18 +341,18 @@
                         <tbody>
                             <tr v-for="(ds_congnotheokhuvucs, index) in ds_congnotheokhuvuc" :key="index">
                                 <td>{{ ds_congnotheokhuvucs.ten }}</td>
-                                <td>{{ ds_congnotheokhuvucs.no_dauky }}</td>
-                                <td>{{ ds_congnotheokhuvucs.ps_trongky }}</td>
-                                <td>{{ ds_congnotheokhuvucs.no_c_ttcungky }}</td>
-                                <td>{{ ds_congnotheokhuvucs.thu_trongky }}</td>
-                                <td>{{ ds_congnotheokhuvucs.co_c_ttcungky }}</td>
-                                <td>{{ ds_congnotheokhuvucs.no_cuoiky }}</td>
-                                <td>{{ ds_congnotheokhuvucs.tytrong }}</td>
-                                <td>{{ ds_congnotheokhuvucs.no_tronghan }}</td>
-                                <td>{{ ds_congnotheokhuvucs.quahan_30ngay }}</td>
-                                <td>{{ ds_congnotheokhuvucs.quahan_60ngay }}</td>
-                                <td>{{ ds_congnotheokhuvucs.quahan_90ngay }}</td>
-                                <td>{{ ds_congnotheokhuvucs.quahan_120ngay }}</td>
+                                <td>{{ formatNumber(ds_congnotheokhuvucs.no_dauky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheokhuvucs.ps_trongky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheokhuvucs.no_c_ttcungky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheokhuvucs.thu_trongky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheokhuvucs.co_c_ttcungky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheokhuvucs.no_cuoiky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheokhuvucs.tytrong) }}</td>
+                                <td>{{ formatNumber(ds_congnotheokhuvucs.no_tronghan) }}</td>
+                                <td>{{ formatNumber(ds_congnotheokhuvucs.quahan_30ngay) }}</td>
+                                <td>{{ formatNumber(ds_congnotheokhuvucs.quahan_60ngay) }}</td>
+                                <td>{{ formatNumber(ds_congnotheokhuvucs.quahan_90ngay) }}</td>
+                                <td>{{ formatNumber(ds_congnotheokhuvucs.quahan_120ngay) }}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -390,18 +390,18 @@
                         <tbody>
                             <tr v-for="(ds_congnotheoasms, index) in ds_congnotheoasm" :key="index">
                                 <td>{{ ds_congnotheoasms.ten }}</td>
-                                <td>{{ ds_congnotheoasms.no_dauky }}</td>
-                                <td>{{ ds_congnotheoasms.ps_trongky }}</td>
-                                <td>{{ ds_congnotheoasms.no_c_ttcungky }}</td>
-                                <td>{{ ds_congnotheoasms.thu_trongky }}</td>
-                                <td>{{ ds_congnotheoasms.co_c_ttcungky }}</td>
-                                <td>{{ ds_congnotheoasms.no_cuoiky }}</td>
-                                <td>{{ ds_congnotheoasms.tytrong }}</td>
-                                <td>{{ ds_congnotheoasms.no_tronghan }}</td>
-                                <td>{{ ds_congnotheoasms.quahan_30ngay }}</td>
-                                <td>{{ ds_congnotheoasms.quahan_60ngay }}</td>
-                                <td>{{ ds_congnotheoasms.quahan_90ngay }}</td>
-                                <td>{{ ds_congnotheoasms.quahan_120ngay }}</td>
+                                <td>{{ formatNumber(ds_congnotheoasms.no_dauky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheoasms.ps_trongky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheoasms.no_c_ttcungky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheoasms.thu_trongky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheoasms.co_c_ttcungky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheoasms.no_cuoiky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheoasms.tytrong) }}</td>
+                                <td>{{ formatNumber(ds_congnotheoasms.no_tronghan) }}</td>
+                                <td>{{ formatNumber(ds_congnotheoasms.quahan_30ngay) }}</td>
+                                <td>{{ formatNumber(ds_congnotheoasms.quahan_60ngay) }}</td>
+                                <td>{{ formatNumber(ds_congnotheoasms.quahan_90ngay) }}</td>
+                                <td>{{ formatNumber(ds_congnotheoasms.quahan_120ngay) }}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -437,18 +437,18 @@
                         <tbody>
                             <tr v-for="(ds_congnotheonkhs, index) in ds_congnotheonkh" :key="index">
                                 <td>{{ ds_congnotheonkhs.ten }}</td>
-                                <td>{{ ds_congnotheonkhs.no_dauky }}</td>
-                                <td>{{ ds_congnotheonkhs.ps_trongky }}</td>
-                                <td>{{ ds_congnotheonkhs.no_c_ttcungky }}</td>
-                                <td>{{ ds_congnotheonkhs.thu_trongky }}</td>
-                                <td>{{ ds_congnotheonkhs.co_c_ttcungky }}</td>
-                                <td>{{ ds_congnotheonkhs.no_cuoiky }}</td>
-                                <td>{{ ds_congnotheonkhs.tytrong }}</td>
-                                <td>{{ ds_congnotheonkhs.no_tronghan }}</td>
-                                <td>{{ ds_congnotheonkhs.quahan_30ngay }}</td>
-                                <td>{{ ds_congnotheonkhs.quahan_60ngay }}</td>
-                                <td>{{ ds_congnotheonkhs.quahan_90ngay }}</td>
-                                <td>{{ ds_congnotheonkhs.quahan_120ngay }}</td>
+                                <td>{{ formatNumber(ds_congnotheonkhs.no_dauky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheonkhs.ps_trongky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheonkhs.no_c_ttcungky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheonkhs.thu_trongky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheonkhs.co_c_ttcungky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheonkhs.no_cuoiky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheonkhs.tytrong) }}</td>
+                                <td>{{ formatNumber(ds_congnotheonkhs.no_tronghan) }}</td>
+                                <td>{{ formatNumber(ds_congnotheonkhs.quahan_30ngay) }}</td>
+                                <td>{{ formatNumber(ds_congnotheonkhs.quahan_60ngay) }}</td>
+                                <td>{{ formatNumber(ds_congnotheonkhs.quahan_90ngay) }}</td>
+                                <td>{{ formatNumber(ds_congnotheonkhs.quahan_120ngay) }}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -486,18 +486,18 @@
                         <tbody>
                             <tr v-for="(ds_congnotheosales, index) in ds_congnotheosale" :key="index">
                                 <td>{{ ds_congnotheosales.ten }}</td>
-                                <td>{{ ds_congnotheosales.no_dauky }}</td>
-                                <td>{{ ds_congnotheosales.ps_trongky }}</td>
-                                <td>{{ ds_congnotheosales.no_c_ttcungky }}</td>
-                                <td>{{ ds_congnotheosales.thu_trongky }}</td>
-                                <td>{{ ds_congnotheosales.co_c_ttcungky }}</td>
-                                <td>{{ ds_congnotheosales.no_cuoiky }}</td>
-                                <td>{{ ds_congnotheosales.tytrong }}</td>
-                                <td>{{ ds_congnotheosales.no_tronghan }}</td>
-                                <td>{{ ds_congnotheosales.quahan_30ngay }}</td>
-                                <td>{{ ds_congnotheosales.quahan_60ngay }}</td>
-                                <td>{{ ds_congnotheosales.quahan_90ngay }}</td>
-                                <td>{{ ds_congnotheosales.quahan_120ngay }}</td>
+                                <td>{{ formatNumber(ds_congnotheosales.no_dauky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheosales.ps_trongky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheosales.no_c_ttcungky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheosales.thu_trongky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheosales.co_c_ttcungky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheosales.no_cuoiky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheosales.tytrong) }}</td>
+                                <td>{{ formatNumber(ds_congnotheosales.no_tronghan) }}</td>
+                                <td>{{ formatNumber(ds_congnotheosales.quahan_30ngay) }}</td>
+                                <td>{{ formatNumber(ds_congnotheosales.quahan_60ngay) }}</td>
+                                <td>{{ formatNumber(ds_congnotheosales.quahan_90ngay) }}</td>
+                                <td>{{ formatNumber(ds_congnotheosales.quahan_120ngay) }}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -533,18 +533,18 @@
                         <tbody>
                             <tr v-for="(ds_congnotheokhachhangs, index) in ds_congnotheokhachhang" :key="index">
                                 <td>{{ ds_congnotheokhachhangs.ten }}</td>
-                                <td>{{ ds_congnotheokhachhangs.no_dauky }}</td>
-                                <td>{{ ds_congnotheokhachhangs.ps_trongky }}</td>
-                                <td>{{ ds_congnotheokhachhangs.no_c_ttcungky }}</td>
-                                <td>{{ ds_congnotheokhachhangs.thu_trongky }}</td>
-                                <td>{{ ds_congnotheokhachhangs.co_c_ttcungky }}</td>
-                                <td>{{ ds_congnotheokhachhangs.no_cuoiky }}</td>
-                                <td>{{ ds_congnotheokhachhangs.tytrong }}</td>
-                                <td>{{ ds_congnotheokhachhangs.no_tronghan }}</td>
-                                <td>{{ ds_congnotheokhachhangs.quahan_30ngay }}</td>
-                                <td>{{ ds_congnotheokhachhangs.quahan_60ngay }}</td>
-                                <td>{{ ds_congnotheokhachhangs.quahan_90ngay }}</td>
-                                <td>{{ ds_congnotheokhachhangs.quahan_120ngay }}</td>
+                                <td>{{ formatNumber(ds_congnotheokhachhangs.no_dauky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheokhachhangs.ps_trongky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheokhachhangs.no_c_ttcungky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheokhachhangs.thu_trongky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheokhachhangs.co_c_ttcungky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheokhachhangs.no_cuoiky) }}</td>
+                                <td>{{ formatNumber(ds_congnotheokhachhangs.tytrong) }}</td>
+                                <td>{{ formatNumber(ds_congnotheokhachhangs.no_tronghan) }}</td>
+                                <td>{{ formatNumber(ds_congnotheokhachhangs.quahan_30ngay) }}</td>
+                                <td>{{ formatNumber(ds_congnotheokhachhangs.quahan_60ngay) }}</td>
+                                <td>{{ formatNumber(ds_congnotheokhachhangs.quahan_90ngay) }}</td>
+                                <td>{{ formatNumber(ds_congnotheokhachhangs.quahan_120ngay) }}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -628,6 +628,13 @@ export default {
                 .catch((error) => {
                     console.log(error);
                 });
+        };
+        const formatNumber = (value) => {
+            if (value !== undefined && value !== null) {
+                return value.toLocaleString();
+            } else {
+                return '';
+            }
         };
         const getInventory = () => {
             isLoading.value = true;
@@ -777,7 +784,8 @@ export default {
             ds_congnotheonkh,
             ds_congnotheosale,
             ds_congnotheokhachhang,
-            ds_congnochung
+            ds_congnochung,
+            formatNumber,
         };
     }
 };
