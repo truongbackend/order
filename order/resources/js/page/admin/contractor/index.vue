@@ -72,7 +72,7 @@
             <div class="card">
                 <div class="card-body">
                     <span class="fw-semibold d-block mb-1">Mời thầu TT cùng kỳ</span>
-                    <h6 class="card-title mb-2"> {{ formatNumber(ds_thauchung.moithau_ttcungky) }} đ</h6>
+                    <h6 class="card-title mb-2"> {{ formatNumber(ds_thauchung.moithau_ttcungky) }} %</h6>
                 </div>
             </div>
         </div>
@@ -80,7 +80,7 @@
             <div class="card">
                 <div class="card-body">
                     <span class="fw-semibold d-block mb-1">Mời thầu TT cùng kỳ</span>
-                    <h6 class="card-title mb-2"> {{ formatNumber(ds_thauchung.moithau_ttnamtruoc) }} đ</h6>
+                    <h6 class="card-title mb-2"> {{ formatNumber(ds_thauchung.moithau_ttnamtruoc) }} %</h6>
                 </div>
             </div>
         </div>
@@ -103,7 +103,7 @@
         <div class="col-sm-2 col-md-2 mt-3">
             <div class="card">
                 <div class="card-body">
-                    <span class="fw-semibold d-block mb-1">Gía trị mời thầu trong kỳ</span>
+                    <span class="fw-semibold d-block mb-1">Giá trị mời thầu trong kỳ</span>
                     <h6 class="card-title mb-2"> {{ formatNumber(ds_thauchung.giatri_trungthautrongky) }} đ</h6>
                 </div>
             </div>
@@ -128,15 +128,15 @@
             <div class="card">
                 <div class="card-body">
                     <span class="fw-semibold d-block mb-1">Số lượng thực hiện</span>
-                    <h6 class="card-title mb-2"> {{ formatNumber(ds_thauchung.soluong_thuchien) }} M</h6>
+                    <h6 class="card-title mb-2"> {{ formatNumber(ds_thauchung.soluong_thuchien) }} </h6>
                 </div>
             </div>
         </div>
         <div class="col-sm-2 col-md-2 mt-3">
             <div class="card">
                 <div class="card-body">
-                    <span class="fw-semibold d-block mb-1">Gía trị thực hiện</span>
-                    <h6 class="card-title mb-2"> {{ formatNumber(ds_thauchung.giatri_thuchien) }} M</h6>
+                    <span class="fw-semibold d-block mb-1">Giá trị thực hiện</span>
+                    <h6 class="card-title mb-2"> {{ formatNumber(ds_thauchung.giatri_thuchien) }} đ</h6>
                 </div>
             </div>
         </div>
@@ -151,8 +151,8 @@
         <div class="col-sm-2 col-md-2 mt-3">
             <div class="card">
                 <div class="card-body">
-                    <span class="fw-semibold d-block mb-1">Gía trị tồn thầu cuối kỳ</span>
-                    <h6 class="card-title mb-2"> {{ formatNumber(ds_thauchung.giatri_tonthaucuoiky) }} M</h6>
+                    <span class="fw-semibold d-block mb-1">Giá trị tồn thầu cuối kỳ</span>
+                    <h6 class="card-title mb-2"> {{ formatNumber(ds_thauchung.giatri_tonthaucuoiky) }} đ</h6>
                 </div>
             </div>
         </div>
@@ -167,7 +167,7 @@
         <div class="col-sm-2 col-md-2 mt-3">
             <div class="card">
                 <div class="card-body">
-                    <span class="fw-semibold d-block mb-1">Gía trị tồn thầu cùng kỳ</span>
+                    <span class="fw-semibold d-block mb-1">Giá trị tồn thầu cùng kỳ</span>
                     <h6 class="card-title mb-2"> {{ formatNumber(ds_thauchung.giatri_tonthaucungky) }} đ</h6>
                 </div>
             </div>
@@ -183,7 +183,7 @@
         <div class="col-sm-2 col-md-2 mt-3">
             <div class="card">
                 <div class="card-body">
-                    <span class="fw-semibold d-block mb-1">Gía trị bỏ thầu</span>
+                    <span class="fw-semibold d-block mb-1">Giá trị bỏ thầu</span>
                     <h6 class="card-title mb-2"> {{ formatNumber(ds_thauchung.giatri_bothau) }} đ</h6>
                 </div>
             </div>
@@ -191,8 +191,8 @@
         <div class="col-sm-2 col-md-2 mt-3">
             <div class="card">
                 <div class="card-body">
-                    <span class="fw-semibold d-block mb-1">Gía trị bỏ thầu TT cùng kỳ</span>
-                    <h6 class="card-title mb-2"> {{ formatNumber(ds_thauchung.giatri_bothaucungky) }} đ</h6>
+                    <span class="fw-semibold d-block mb-1">Giá trị bỏ thầu TT cùng kỳ</span>
+                    <h6 class="card-title mb-2"> {{ formatNumber(ds_thauchung.giatri_bothaucungky) }} %</h6>
                 </div>
             </div>
         </div>
@@ -200,7 +200,7 @@
             <div class="card">
                 <div class="card-body">
                     <span class="fw-semibold d-block mb-1">GT bỏ thầu TT năm trước</span>
-                    <h6 class="card-title mb-2"> {{ formatNumber(ds_thauchung.giatri_bothaunamtruoc) }} đ</h6>
+                    <h6 class="card-title mb-2"> {{ formatNumber(ds_thauchung.giatri_bothaunamtruoc) }} %</h6>
                 </div>
             </div>
         </div>

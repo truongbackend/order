@@ -84,17 +84,17 @@
                                     }}</td>
                                 <td @click="handleMaVtClick(filterInventorys.ma_vt)">{{ filterInventorys.so_luong }}
                                 </td>
-                                <td @click="handleMaVtClick(filterInventorys.ma_vt)">{{ filterInventorys.tien }}</td>
-                                <td @click="handleMaVtClick(filterInventorys.ma_vt)">{{ filterInventorys.sl_ban_thang }}
+                                <td @click="handleMaVtClick(filterInventorys.ma_vt)">{{ formatNumber(filterInventorys.tien) }}</td>
+                                <td @click="handleMaVtClick(filterInventorys.ma_vt)">{{ formatNumber(filterInventorys.sl_ban_thang) }}
                                 </td>
                                 <td @click="handleMaVtClick(filterInventorys.ma_vt)">{{ filterInventorys.ma_plvt3 }}
                                 </td>
                                 <td @click="handleMaVtClick(filterInventorys.ma_vt)">{{ filterInventorys.ten_plvt2 }}
                                 </td>
-                                <td @click="handleMaVtClick(filterInventorys.ma_vt)">{{ filterInventorys.T_SLTonThau }}
+                                <td @click="handleMaVtClick(filterInventorys.ma_vt)">{{ formatNumber(filterInventorys.T_SLTonThau) }}
                                 </td>
-                                <td @click="handleMaVtClick(filterInventorys.ma_vt)">{{ filterInventorys.T_SLTonThau_CN
-                                    }}</td>
+                                <td @click="handleMaVtClick(filterInventorys.ma_vt)">{{ formatNumber(filterInventorys.T_SLTonThau_CN)}}
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -148,22 +148,22 @@
                                         <td>{{ ds_cttonthaus.ten_kh }}</td>
                                         <td>{{ ds_cttonthaus.ngay_kt_hd }}</td>
                                         <td>{{ ds_cttonthaus.so_thang }}</td>
-                                        <td>{{ ds_cttonthaus.slThau }}</td>
-                                        <td>{{ ds_cttonthaus.sl_thang }}</td>
-                                        <td>{{ ds_cttonthaus.tienThau }}</td>
-                                        <td>{{ ds_cttonthaus.slTonThau }}</td>
-                                        <td>{{ ds_cttonthaus.tienTonThau }}</td>
+                                        <td>{{ formatNumber(ds_cttonthaus.slThau) }}</td>
+                                        <td>{{ formatNumber(ds_cttonthaus.sl_thang) }}</td>
+                                        <td>{{ formatNumber(ds_cttonthaus.tienThau) }}</td>
+                                        <td>{{ formatNumber(ds_cttonthaus.slTonThau) }}</td>
+                                        <td>{{ formatNumber(ds_cttonthaus.tienTonThau) }}</td>
                                     </tr>
                                 </tbody>
                             </table>
 
                         </div>
                         <div class="alert alert-warning text-end mt-2" role="alert">
-                            Số lượng thầu: {{ totalSLThau }},
-                            số lượng tồn thầu chia theo tháng: {{ totalTienThau }},
-                            giá trị thầu: {{ totalSLTonThau }},
-                            số lượng tồn thầu: {{ totalSLTonThau }},
-                            Giá trị tồn thầu: {{ totalTienTonThau }}
+                            Số lượng thầu: {{ formatNumber(totalSLThau) }},
+                            số lượng tồn thầu chia theo tháng: {{ formatNumber(totalTienThau) }},
+                            giá trị thầu: {{ formatNumber(totalSLTonThau) }},
+                            số lượng tồn thầu: {{ formatNumber(totalSLTonThau) }},
+                            Giá trị tồn thầu: {{ formatNumber(totalTienTonThau) }}
                         </div>
                     </div>
                 </div>
@@ -191,18 +191,18 @@
                                 <tbody>
                                     <tr v-for="(ds_ctbanhangs, index) in ds_ctbanhangs" :key="index">
                                         <td>{{ index + 1 }}</td>
-                                        <td>{{ ds_ctbanhangs.thang1 }}</td>
-                                        <td>{{ ds_ctbanhangs.thang2 }}</td>
-                                        <td>{{ ds_ctbanhangs.thang3 }}</td>
-                                        <td>{{ ds_ctbanhangs.thang4 }}</td>
-                                        <td>{{ ds_ctbanhangs.thang5 }}</td>
-                                        <td>{{ ds_ctbanhangs.thang6 }}</td>
-                                        <td>{{ ds_ctbanhangs.thang7 }}</td>
-                                        <td>{{ ds_ctbanhangs.thang8 }}</td>
-                                        <td>{{ ds_ctbanhangs.thang9 }}</td>
-                                        <td>{{ ds_ctbanhangs.thang10 }}</td>
-                                        <td>{{ ds_ctbanhangs.thang11 }}</td>
-                                        <td>{{ ds_ctbanhangs.thang12 }}</td>
+                                        <td>{{ formatNumber(ds_ctbanhangs.thang1) }}</td>
+                                        <td>{{ formatNumber(ds_ctbanhangs.thang2) }}</td>
+                                        <td>{{ formatNumber(ds_ctbanhangs.thang3) }}</td>
+                                        <td>{{ formatNumber(ds_ctbanhangs.thang4) }}</td>
+                                        <td>{{ formatNumber(ds_ctbanhangs.thang5) }}</td>
+                                        <td>{{ formatNumber(ds_ctbanhangs.thang6) }}</td>
+                                        <td>{{ formatNumber(ds_ctbanhangs.thang7) }}</td>
+                                        <td>{{ formatNumber(ds_ctbanhangs.thang8) }}</td>
+                                        <td>{{ formatNumber(ds_ctbanhangs.thang9) }}</td>
+                                        <td>{{ formatNumber(ds_ctbanhangs.thang10) }}</td>
+                                        <td>{{ formatNumber(ds_ctbanhangs.thang11) }}</td>
+                                        <td>{{ formatNumber(ds_ctbanhangs.thang12) }}</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -274,6 +274,13 @@ export default {
                 .catch((error) => {
                     console.log(error);
                 });
+        };
+        const formatNumber = (value) => {
+            if (value !== undefined && value !== null) {
+                return value.toLocaleString();
+            } else {
+                return '';
+            }
         };
         const getInventory = () => {
             const axiosConfig = {
@@ -372,7 +379,8 @@ export default {
             totalTienTonThau,
             getInventory,
             ds_cttonthaus,
-            ds_ctbanhangs
+            ds_ctbanhangs,
+            formatNumber,
         };
     }
 };

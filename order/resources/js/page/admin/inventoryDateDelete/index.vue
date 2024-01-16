@@ -66,8 +66,8 @@
                                 <td>{{ filterInventorys.so_ngay_cl }}</td>
                                 <td>{{ filterInventorys.ngay_nhapkho }}</td>
                                 <td>{{ filterInventorys.so_luong }}</td>
-                                <td>{{ filterInventorys.don_gia }}</td>
-                                <td>{{ filterInventorys.tien }}</td>
+                                <td>{{ formatNumber(filterInventorys.don_gia) }}</td>
+                                <td>{{ formatNumber(filterInventorys.tien) }}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -117,7 +117,13 @@ export default {
                     console.log(error);
                 });
         };
-
+        const formatNumber = (value) => {
+            if (value !== undefined && value !== null) {
+                return value.toLocaleString();
+            } else {
+                return '';
+            }
+        };
         const getInventory = () => {
             const axiosConfig = {
                 headers: {
@@ -179,6 +185,7 @@ export default {
             selectedDate,
             filterInventory,
             getInventory,
+            formatNumber,
         };
     },
 };

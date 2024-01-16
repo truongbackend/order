@@ -64,84 +64,84 @@
     <div class="col-sm-2 col-md-2 mt-3">
         <div class="card">
             <div class="card-body"><span class="fw-semibold d-block mb-1">Kế hoạch năm nay</span>
-                <h6 class="card-title mb-2">{{ doanhthu_chung.doanhso_kehoach}} đ</h6>
+                <h6 class="card-title mb-2">{{ formatNumber(doanhthu_chung.doanhso_kehoach)}} đ</h6>
             </div>
         </div>
     </div>
     <div class="col-sm-2 col-md-2 mt-3">
         <div class="card">
             <div class="card-body"><span class="fw-semibold d-block mb-1">Số lượng năm nay</span>
-                <h6 class="card-title mb-2">{{ doanhthu_chung.soluong_namnay}} K</h6>
+                <h6 class="card-title mb-2">{{ formatNumber(doanhthu_chung.soluong_namnay)}} </h6>
             </div>
         </div>
     </div>
     <div class="col-sm-2 col-md-2 mt-3">
         <div class="card">
             <div class="card-body"><span class="fw-semibold d-block mb-1">DT năm trước</span>
-                <h6 class="card-title mb-2">{{ doanhthu_chung.doanhso_namtruoc}} đ</h6>
+                <h6 class="card-title mb-2">{{ formatNumber(doanhthu_chung.doanhso_namtruoc)}} đ</h6>
             </div>
         </div>
     </div>
     <div class="col-sm-2 col-md-2 mt-3">
         <div class="card">
             <div class="card-body"><span class="fw-semibold d-block mb-1">Tỉ lệ đạt được</span>
-                <h6 class="card-title mb-2">{{ doanhthu_chung.tile_datduoc}} đ</h6>
+                <h6 class="card-title mb-2">{{ formatNumber(doanhthu_chung.tile_datduoc)}} đ</h6>
             </div>
         </div>
     </div>
     <div class="col-sm-2 col-md-2 mt-3">
         <div class="card">
             <div class="card-body"><span class="fw-semibold d-block mb-1">Số lượng cùng kỳ</span>
-                <h6 class="card-title mb-2">{{ doanhthu_chung.soluong_cungky}} K</h6>
+                <h6 class="card-title mb-2">{{ formatNumber(doanhthu_chung.soluong_cungky)}} </h6>
             </div>
         </div>
     </div>
     <div class="col-sm-2 col-md-2 mt-3">
         <div class="card">
             <div class="card-body"><span class="fw-semibold d-block mb-1">DT cùng kỳ</span>
-                <h6 class="card-title mb-2">{{ doanhthu_chung.doanhso_cungky}} đ</h6>
+                <h6 class="card-title mb-2">{{ formatNumber(doanhthu_chung.doanhso_cungky)}} đ</h6>
             </div>
         </div>
     </div>
     <div class="col-sm-2 col-md-2 mt-3">
         <div class="card">
             <div class="card-body"><span class="fw-semibold d-block mb-1">Tăng trưởng cùng kỳ</span>
-                <h6 class="card-title mb-2">{{ doanhthu_chung.tt_cungky}} %</h6>
+                <h6 class="card-title mb-2">{{ formatNumber(doanhthu_chung.tt_cungky)}} %</h6>
             </div>
         </div>
     </div>
     <div class="col-sm-2 col-md-2 mt-3">
         <div class="card">
             <div class="card-body"><span class="fw-semibold d-block mb-1">SL tặng và kiểm nghiệm</span>
-                <h6 class="card-title mb-2">{{ doanhthu_chung.sl_tientang_kiemnghiem}} K</h6>
+                <h6 class="card-title mb-2">{{ formatNumber(doanhthu_chung.sl_tientang_kiemnghiem)}} </h6>
             </div>
         </div>
     </div>
     <div class="col-sm-2 col-md-2 mt-3">
         <div class="card">
             <div class="card-body"><span class="fw-semibold d-block mb-1">Tiền tặng và kiểm nghiệm</span>
-                <h6 class="card-title mb-2">{{ doanhthu_chung.tientang_kiemnghiem}} đ</h6>
+                <h6 class="card-title mb-2">{{ formatNumber(doanhthu_chung.tientang_kiemnghiem)}} đ</h6>
             </div>
         </div>
     </div>
     <div class="col-sm-2 col-md-2 mt-3">
         <div class="card">
             <div class="card-body"><span class="fw-semibold d-block mb-1">Danh thu năm trước</span>
-                <h6 class="card-title mb-2">{{ doanhthu_chung.doanhso_namtruoc}} %</h6>
+                <h6 class="card-title mb-2">{{ formatNumber(doanhthu_chung.doanhso_namtruoc)}} %</h6>
             </div>
         </div>
     </div>
     <div class="col-sm-2 col-md-2 mt-3">
         <div class="card">
             <div class="card-body"><span class="fw-semibold d-block mb-1">SL năm trước</span>
-                <h6 class="card-title mb-2">{{ doanhthu_chung.soluong_namtruoc}} M</h6>
+                <h6 class="card-title mb-2">{{ formatNumber(doanhthu_chung.soluong_namtruoc)}} </h6>
             </div>
         </div>
     </div>
     <div class="col-sm-2 col-md-2 mt-3">
         <div class="card">
             <div class="card-body"><span class="fw-semibold d-block mb-1">Tăng trưởng</span>
-                <h6 class="card-title mb-2">{{ doanhthu_chung.tang_truong}} %</h6>
+                <h6 class="card-title mb-2">{{ formatNumber(doanhthu_chung.tang_truong)}} %</h6>
             </div>
         </div>
     </div>
@@ -178,18 +178,18 @@
                         <tbody>
                             <tr v-for="(doanhthu_theoloais, index) in doanhthu_theoloai" :key="index">
                                 <td>{{ doanhthu_theoloais.ten }}</td>
-                                <td>{{ doanhthu_theoloais.soluong_kehoach }}</td>
-                                <td>{{ doanhthu_theoloais.doanhso_kehoach }}</td>
-                                <td>{{ doanhthu_theoloais.soluong_namnay }}</td>
-                                <td>{{ doanhthu_theoloais.doanhso_namnay }}</td>
-                                <td>{{ doanhthu_theoloais.tile_datduoc }}</td>
-                                <td>{{ doanhthu_theoloais.tientang_kiemnghiem }}</td>
-                                <td>{{ doanhthu_theoloais.soluong_cungky }}</td>
-                                <td>{{ doanhthu_theoloais.doanhso_cungky }}</td>
-                                <td>{{ doanhthu_theoloais.tt_cungky }}</td>
-                                <td>{{ doanhthu_theoloais.soluong_namtruoc }}</td>
-                                <td>{{ doanhthu_theoloais.doanhso_namtruoc }}</td>
-                                <td>{{ doanhthu_theoloais.tang_truong }}</td>
+                                <td>{{ formatNumber(doanhthu_theoloais.soluong_kehoach) }}</td>
+                                <td>{{ formatNumber(doanhthu_theoloais.doanhso_kehoach) }}</td>
+                                <td>{{ formatNumber(doanhthu_theoloais.soluong_namnay) }}</td>
+                                <td>{{ formatNumber(doanhthu_theoloais.doanhso_namnay) }}</td>
+                                <td>{{ formatNumber(doanhthu_theoloais.tile_datduoc) }}</td>
+                                <td>{{ formatNumber(doanhthu_theoloais.tientang_kiemnghiem) }}</td>
+                                <td>{{ formatNumber(doanhthu_theoloais.soluong_cungky) }}</td>
+                                <td>{{ formatNumber(doanhthu_theoloais.doanhso_cungky) }}</td>
+                                <td>{{ formatNumber(doanhthu_theoloais.tt_cungky) }}</td>
+                                <td>{{ formatNumber(doanhthu_theoloais.soluong_namtruoc) }}</td>
+                                <td>{{ formatNumber(doanhthu_theoloais.doanhso_namtruoc) }}</td>
+                                <td>{{ formatNumber(doanhthu_theoloais.tang_truong) }}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -225,18 +225,18 @@
                         <tbody>
                             <tr v-for="(doanhthu_theochinhanhs, index) in doanhthu_theochinhanh" :key="index">
                                 <td>{{ doanhthu_theochinhanhs.ten }}</td>
-                                <td>{{ doanhthu_theochinhanhs.soluong_kehoach }}</td>
-                                <td>{{ doanhthu_theochinhanhs.doanhso_kehoach }}</td>
-                                <td>{{ doanhthu_theochinhanhs.soluong_namnay }}</td>
-                                <td>{{ doanhthu_theochinhanhs.doanhso_namnay }}</td>
-                                <td>{{ doanhthu_theochinhanhs.tile_datduoc }}</td>
-                                <td>{{ doanhthu_theochinhanhs.tientang_kiemnghiem }}</td>
-                                <td>{{ doanhthu_theochinhanhs.soluong_cungky }}</td>
-                                <td>{{ doanhthu_theochinhanhs.doanhso_cungky }}</td>
-                                <td>{{ doanhthu_theochinhanhs.tt_cungky }}</td>
-                                <td>{{ doanhthu_theochinhanhs.soluong_namtruoc }}</td>
-                                <td>{{ doanhthu_theochinhanhs.doanhso_namtruoc }}</td>
-                                <td>{{ doanhthu_theochinhanhs.tang_truong }}</td>
+                                <td>{{ formatNumber(doanhthu_theochinhanhs.soluong_kehoach) }}</td>
+                                <td>{{ formatNumber(doanhthu_theochinhanhs.doanhso_kehoach) }}</td>
+                                <td>{{ formatNumber(doanhthu_theochinhanhs.soluong_namnay) }}</td>
+                                <td>{{ formatNumber(doanhthu_theochinhanhs.doanhso_namnay) }}</td>
+                                <td>{{ formatNumber(doanhthu_theochinhanhs.tile_datduoc) }}</td>
+                                <td>{{ formatNumber(doanhthu_theochinhanhs.tientang_kiemnghiem) }}</td>
+                                <td>{{ formatNumber(doanhthu_theochinhanhs.soluong_cungky) }}</td>
+                                <td>{{ formatNumber(doanhthu_theochinhanhs.doanhso_cungky) }}</td>
+                                <td>{{ formatNumber(doanhthu_theochinhanhs.tt_cungky) }}</td>
+                                <td>{{ formatNumber(doanhthu_theochinhanhs.soluong_namtruoc) }}</td>
+                                <td>{{ formatNumber(doanhthu_theochinhanhs.doanhso_namtruoc) }}</td>
+                                <td>{{ formatNumber(doanhthu_theochinhanhs.tang_truong) }}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -274,18 +274,18 @@
                         <tbody>
                             <tr v-for="(doanhthu_theonsxs, index) in doanhthu_theonsx" :key="index">
                                 <td>{{ doanhthu_theonsxs.ten }}</td>
-                                <td>{{ doanhthu_theonsxs.soluong_kehoach }}</td>
-                                <td>{{ doanhthu_theonsxs.doanhso_kehoach }}</td>
-                                <td>{{ doanhthu_theonsxs.soluong_namnay }}</td>
-                                <td>{{ doanhthu_theonsxs.doanhso_namnay }}</td>
-                                <td>{{ doanhthu_theonsxs.tile_datduoc }}</td>
-                                <td>{{ doanhthu_theonsxs.tientang_kiemnghiem }}</td>
-                                <td>{{ doanhthu_theonsxs.soluong_cungky }}</td>
-                                <td>{{ doanhthu_theonsxs.doanhso_cungky }}</td>
-                                <td>{{ doanhthu_theonsxs.tt_cungky }}</td>
-                                <td>{{ doanhthu_theonsxs.soluong_namtruoc }}</td>
-                                <td>{{ doanhthu_theonsxs.doanhso_namtruoc }}</td>
-                                <td>{{ doanhthu_theonsxs.tang_truong }}</td>
+                                <td>{{ formatNumber(doanhthu_theonsxs.soluong_kehoach) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonsxs.doanhso_kehoach) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonsxs.soluong_namnay) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonsxs.doanhso_namnay) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonsxs.tile_datduoc) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonsxs.tientang_kiemnghiem) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonsxs.soluong_cungky) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonsxs.doanhso_cungky) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonsxs.tt_cungky) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonsxs.soluong_namtruoc) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonsxs.doanhso_namtruoc) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonsxs.tang_truong) }}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -321,18 +321,18 @@
                         <tbody>
                             <tr v-for="(doanhthu_theonkhs, index) in doanhthu_theonkh" :key="index">
                                 <td>{{ doanhthu_theonkhs.ten }}</td>
-                                <td>{{ doanhthu_theonkhs.soluong_kehoach }}</td>
-                                <td>{{ doanhthu_theonkhs.doanhso_kehoach }}</td>
-                                <td>{{ doanhthu_theonkhs.soluong_namnay }}</td>
-                                <td>{{ doanhthu_theonkhs.doanhso_namnay }}</td>
-                                <td>{{ doanhthu_theonkhs.tile_datduoc }}</td>
-                                <td>{{ doanhthu_theonkhs.tientang_kiemnghiem }}</td>
-                                <td>{{ doanhthu_theonkhs.soluong_cungky }}</td>
-                                <td>{{ doanhthu_theonkhs.doanhso_cungky }}</td>
-                                <td>{{ doanhthu_theonkhs.tt_cungky }}</td>
-                                <td>{{ doanhthu_theonkhs.soluong_namtruoc }}</td>
-                                <td>{{ doanhthu_theonkhs.doanhso_namtruoc }}</td>
-                                <td>{{ doanhthu_theonkhs.tang_truong }}</td>
+                                <td>{{ formatNumber(doanhthu_theonkhs.soluong_kehoach) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonkhs.doanhso_kehoach) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonkhs.soluong_namnay) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonkhs.doanhso_namnay) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonkhs.tile_datduoc) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonkhs.tientang_kiemnghiem) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonkhs.soluong_cungky) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonkhs.doanhso_cungky) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonkhs.tt_cungky) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonkhs.soluong_namtruoc) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonkhs.doanhso_namtruoc) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonkhs.tang_truong) }}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -370,18 +370,18 @@
                         <tbody>
                             <tr v-for="(doanhthu_theonsps, index) in doanhthu_theonsp" :key="index">
                                 <td>{{ doanhthu_theonsps.ten }}</td>
-                                <td>{{ doanhthu_theonsps.soluong_kehoach }}</td>
-                                <td>{{ doanhthu_theonsps.doanhso_kehoach }}</td>
-                                <td>{{ doanhthu_theonsps.soluong_namnay }}</td>
-                                <td>{{ doanhthu_theonsps.doanhso_namnay }}</td>
-                                <td>{{ doanhthu_theonsps.tile_datduoc }}</td>
-                                <td>{{ doanhthu_theonsps.tientang_kiemnghiem }}</td>
-                                <td>{{ doanhthu_theonsps.soluong_cungky }}</td>
-                                <td>{{ doanhthu_theonsps.doanhso_cungky }}</td>
-                                <td>{{ doanhthu_theonsps.tt_cungky }}</td>
-                                <td>{{ doanhthu_theonsps.soluong_namtruoc }}</td>
-                                <td>{{ doanhthu_theonsps.doanhso_namtruoc }}</td>
-                                <td>{{ doanhthu_theonsps.tang_truong }}</td>
+                                <td>{{ formatNumber(doanhthu_theonsps.soluong_kehoach) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonsps.doanhso_kehoach) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonsps.soluong_namnay) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonsps.doanhso_namnay) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonsps.tile_datduoc) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonsps.tientang_kiemnghiem) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonsps.soluong_cungky) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonsps.doanhso_cungky) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonsps.tt_cungky) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonsps.soluong_namtruoc) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonsps.doanhso_namtruoc) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonsps.tang_truong) }}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -417,18 +417,18 @@
                         <tbody>
                             <tr v-for="(doanhthu_theonhanviens, index) in doanhthu_theonhanvien" :key="index">
                                 <td>{{ doanhthu_theonhanviens.ten }}</td>
-                                <td>{{ doanhthu_theonhanviens.soluong_kehoach }}</td>
-                                <td>{{ doanhthu_theonhanviens.doanhso_kehoach }}</td>
-                                <td>{{ doanhthu_theonhanviens.soluong_namnay }}</td>
-                                <td>{{ doanhthu_theonhanviens.doanhso_namnay }}</td>
-                                <td>{{ doanhthu_theonhanviens.tile_datduoc }}</td>
-                                <td>{{ doanhthu_theonhanviens.tientang_kiemnghiem }}</td>
-                                <td>{{ doanhthu_theonhanviens.soluong_cungky }}</td>
-                                <td>{{ doanhthu_theonhanviens.doanhso_cungky }}</td>
-                                <td>{{ doanhthu_theonhanviens.tt_cungky }}</td>
-                                <td>{{ doanhthu_theonhanviens.soluong_namtruoc }}</td>
-                                <td>{{ doanhthu_theonhanviens.doanhso_namtruoc }}</td>
-                                <td>{{ doanhthu_theonhanviens.tang_truong }}</td>
+                                <td>{{ formatNumber(doanhthu_theonhanviens.soluong_kehoach) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonhanviens.doanhso_kehoach) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonhanviens.soluong_namnay) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonhanviens.doanhso_namnay) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonhanviens.tile_datduoc) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonhanviens.tientang_kiemnghiem) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonhanviens.soluong_cungky) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonhanviens.doanhso_cungky) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonhanviens.tt_cungky) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonhanviens.soluong_namtruoc) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonhanviens.doanhso_namtruoc) }}</td>
+                                <td>{{ formatNumber(doanhthu_theonhanviens.tang_truong) }}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -466,18 +466,18 @@
                         <tbody>
                             <tr v-for="(doanhthu_theokhachangs, index) in doanhthu_theokhachang" :key="index">
                                 <td>{{ doanhthu_theokhachangs.ten }}</td>
-                                <td>{{ doanhthu_theokhachangs.soluong_kehoach }}</td>
-                                <td>{{ doanhthu_theokhachangs.doanhso_kehoach }}</td>
-                                <td>{{ doanhthu_theokhachangs.soluong_namnay }}</td>
-                                <td>{{ doanhthu_theokhachangs.doanhso_namnay }}</td>
-                                <td>{{ doanhthu_theokhachangs.tile_datduoc }}</td>
-                                <td>{{ doanhthu_theokhachangs.tientang_kiemnghiem }}</td>
-                                <td>{{ doanhthu_theokhachangs.soluong_cungky }}</td>
-                                <td>{{ doanhthu_theokhachangs.doanhso_cungky }}</td>
-                                <td>{{ doanhthu_theokhachangs.tt_cungky }}</td>
-                                <td>{{ doanhthu_theokhachangs.soluong_namtruoc }}</td>
-                                <td>{{ doanhthu_theokhachangs.doanhso_namtruoc }}</td>
-                                <td>{{ doanhthu_theokhachangs.tang_truong }}</td>
+                                <td>{{ formatNumber(doanhthu_theokhachangs.soluong_kehoach) }}</td>
+                                <td>{{ formatNumber(doanhthu_theokhachangs.doanhso_kehoach) }}</td>
+                                <td>{{ formatNumber(doanhthu_theokhachangs.soluong_namnay) }}</td>
+                                <td>{{ formatNumber(doanhthu_theokhachangs.doanhso_namnay) }}</td>
+                                <td>{{ formatNumber(doanhthu_theokhachangs.tile_datduoc) }}</td>
+                                <td>{{ formatNumber(doanhthu_theokhachangs.tientang_kiemnghiem) }}</td>
+                                <td>{{ formatNumber(doanhthu_theokhachangs.soluong_cungky) }}</td>
+                                <td>{{ formatNumber(doanhthu_theokhachangs.doanhso_cungky) }}</td>
+                                <td>{{ formatNumber(doanhthu_theokhachangs.tt_cungky) }}</td>
+                                <td>{{ formatNumber(doanhthu_theokhachangs.soluong_namtruoc) }}</td>
+                                <td>{{ formatNumber(doanhthu_theokhachangs.doanhso_namtruoc) }}</td>
+                                <td>{{ formatNumber(doanhthu_theokhachangs.tang_truong) }}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -513,18 +513,18 @@
                         <tbody>
                             <tr v-for="(doanhthu_theosanphams, index) in doanhthu_theosanpham" :key="index">
                                 <td>{{ doanhthu_theosanphams.ten }}</td>
-                                <td>{{ doanhthu_theosanphams.soluong_kehoach }}</td>
-                                <td>{{ doanhthu_theosanphams.doanhso_kehoach }}</td>
-                                <td>{{ doanhthu_theosanphams.soluong_namnay }}</td>
-                                <td>{{ doanhthu_theosanphams.doanhso_namnay }}</td>
-                                <td>{{ doanhthu_theosanphams.tile_datduoc }}</td>
-                                <td>{{ doanhthu_theosanphams.tientang_kiemnghiem }}</td>
-                                <td>{{ doanhthu_theosanphams.soluong_cungky }}</td>
-                                <td>{{ doanhthu_theosanphams.doanhso_cungky }}</td>
-                                <td>{{ doanhthu_theosanphams.tt_cungky }}</td>
-                                <td>{{ doanhthu_theosanphams.soluong_namtruoc }}</td>
-                                <td>{{ doanhthu_theosanphams.doanhso_namtruoc }}</td>
-                                <td>{{ doanhthu_theosanphams.tang_truong }}</td>
+                                <td>{{ formatNumber(doanhthu_theosanphams.soluong_kehoach) }}</td>
+                                <td>{{ formatNumber(doanhthu_theosanphams.doanhso_kehoach) }}</td>
+                                <td>{{ formatNumber(doanhthu_theosanphams.soluong_namnay) }}</td>
+                                <td>{{ formatNumber(doanhthu_theosanphams.doanhso_namnay) }}</td>
+                                <td>{{ formatNumber(doanhthu_theosanphams.tile_datduoc) }}</td>
+                                <td>{{ formatNumber(doanhthu_theosanphams.tientang_kiemnghiem) }}</td>
+                                <td>{{ formatNumber(doanhthu_theosanphams.soluong_cungky) }}</td>
+                                <td>{{ formatNumber(doanhthu_theosanphams.doanhso_cungky) }}</td>
+                                <td>{{ formatNumber(doanhthu_theosanphams.tt_cungky) }}</td>
+                                <td>{{ formatNumber(doanhthu_theosanphams.soluong_namtruoc) }}</td>
+                                <td>{{ formatNumber(doanhthu_theosanphams.doanhso_namtruoc) }}</td>
+                                <td>{{ formatNumber(doanhthu_theosanphams.tang_truong) }}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -609,6 +609,13 @@ export default {
                 .catch((error) => {
                     console.log(error);
                 });
+        };
+        const formatNumber = (value) => {
+            if (value !== undefined && value !== null) {
+                return value.toLocaleString();
+            } else {
+                return '';
+            }
         };
         const getInventory = () => {
             const axiosConfig = {
@@ -765,6 +772,7 @@ export default {
             doanhthu_theosanpham,
             chartCanvas,
             isLoading,
+            formatNumber,
         };
     }
 };
