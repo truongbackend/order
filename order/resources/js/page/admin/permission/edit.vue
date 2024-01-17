@@ -34,17 +34,13 @@
             <div class="row mb-3">
                 <label for="exampleFormControlSelect1" class="col-sm-2 col-form-label">Khu vực</label>
                 <div class="col-sm-10">
-                    <select v-model="user.store_id" class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
-                        <option v-for="store in stores" :value="store.ID">{{ store.store_name }}</option>
-                    </select>
+                    <model-list-select :list="stores" v-model="user.store_id" option-value="ID" option-text="store_name" placeholder="Chọn khu vực"></model-list-select>
                 </div>
             </div>
             <div class="row mb-3">
                 <label for="exampleFormControlSelect1" class="col-sm-2 col-form-label">Nhóm quyền</label>
                 <div class="col-sm-10">
-                    <select v-model="userRoles" class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
-                        <option v-for="role in roles" :value="role.id">{{ role.name }}</option>
-                    </select>
+                    <model-list-select :list="roles" v-model="userRoles" option-value="id" option-text="name" placeholder="Chọn nhóm quyền"></model-list-select>
                 </div>
             </div>
             <div class="row mb-3">
@@ -528,7 +524,11 @@ import {
 import {
     inject
 } from 'vue';
+import { ModelListSelect } from 'vue-search-select';
 export default defineComponent({
+    components: {
+        ModelListSelect,
+    },
     setup() {
         const globalState = inject('globalState');
         const baseUrl = globalState.baseUrl;
@@ -794,19 +794,19 @@ export default defineComponent({
                 functions: {
                     show: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     },
                     create: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     },
                     edit: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     },
                     delete: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     }
                 },
                 denied: false,
@@ -818,19 +818,19 @@ export default defineComponent({
                 functions: {
                     show: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     },
                     create: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     },
                     edit: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     },
                     delete: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     }
                 },
                 denied: false,
@@ -842,19 +842,19 @@ export default defineComponent({
                 functions: {
                     show: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     },
                     create: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     },
                     edit: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     },
                     delete: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     }
                 },
                 denied: false,
@@ -866,19 +866,19 @@ export default defineComponent({
                 functions: {
                     show: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     },
                     create: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     },
                     edit: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     },
                     delete: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     }
                 },
                 denied: false,
@@ -890,19 +890,19 @@ export default defineComponent({
                 functions: {
                     show: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     },
                     create: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     },
                     edit: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     },
                     delete: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     }
                 },
                 denied: false,
@@ -914,19 +914,19 @@ export default defineComponent({
                 functions: {
                     show: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     },
                     create: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     },
                     edit: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     },
                     delete: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     }
                 },
                 denied: false,
@@ -938,19 +938,19 @@ export default defineComponent({
                 functions: {
                     show: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     },
                     create: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     },
                     edit: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     },
                     delete: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     }
                 },
                 denied: false,
@@ -962,19 +962,19 @@ export default defineComponent({
                 functions: {
                     show: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     },
                     create: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     },
                     edit: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     },
                     delete: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     }
                 },
                 denied: false,
@@ -986,19 +986,19 @@ export default defineComponent({
                 functions: {
                     show: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     },
                     create: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     },
                     edit: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     },
                     delete: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     }
                 },
                 denied: false,
@@ -1010,19 +1010,19 @@ export default defineComponent({
                 functions: {
                     show: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     },
                     create: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     },
                     edit: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     },
                     delete: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     }
                 },
                 denied: false,
@@ -1034,19 +1034,19 @@ export default defineComponent({
                 functions: {
                     show: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     },
                     create: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     },
                     edit: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     },
                     delete: {
                         checked: false,
-                        disabled: true, 
+                        disabled: true,
                     },
                 },
                 denied: false,

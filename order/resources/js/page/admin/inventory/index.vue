@@ -82,16 +82,16 @@
                                 <td>{{ filterInventorys.ma_lo }}</td>
                                 <td>{{ filterInventorys.han_dung }}</td>
                                 <td>{{ filterInventorys.ngay_nhapkho }}</td>
-                                <td>{{ filterInventorys.so_thang_hethan }}</td>
+                                <td>{{ formatNumber(filterInventorys.so_thang_hethan) }}</td>
                                 <td>{{ filterInventorys.so_ngay_hethan }}</td>
-                                <td>{{ filterInventorys.so_luong }}</td>
-                                <td>{{ filterInventorys.tien }}</td>
-                                <td>{{ filterInventorys.sl_ban_thang }}</td>
+                                <td>{{ formatNumber(filterInventorys.so_luong) }}</td>
+                                <td>{{ formatNumber(filterInventorys.tien) }}</td>
+                                <td>{{ formatNumber(filterInventorys.sl_ban_thang) }}</td>
                                 <td>{{ filterInventorys.ten_nhvt }}</td>
                                 <td>{{ filterInventorys.ten_plvt2 }}</td>
                                 <td>{{ filterInventorys.ma_plvt3 }}</td>
-                                <td>{{ formatNumber(filterInventorys.T_SLTonThau) }}</td>
-                                <td>{{ formatNumber(filterInventorys.T_SLTonThau_CN) }}</td>
+                                <td>{{ formatNumber(filterInventorys.t_SLTonThau) }}</td>
+                                <td>{{ formatNumber(filterInventorys.t_SLTonThau_CN) }}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -107,6 +107,7 @@
                                 <th>nhóm hàng</th>
                                 <th>mã vật tư</th>
                                 <th>tên vật tư - đóng gói - nsx </th>
+                                <th>Đơn vị tính </th>
                                 <th>hạn sử dụng sp </th>
                                 <th>số lượng</th>
                                 <th>Tổng tiền</th>
@@ -129,12 +130,12 @@
                                 <td>{{ filterProducts.ten_vt }}</td>
                                 <td>{{ filterProducts.dvt }}</td>
                                 <td>{{ filterProducts.han_dung_sp }}</td>
-                                <td>{{ filterProducts.so_luong }}</td>
-                                <td>{{ filterProducts.tien }}</td>
-                                <td>{{ filterProducts.sl_ban_thang }}</td>
-                                <td>{{ filterProducts.so_thang_ban }}</td>
-                                <td>{{ filterProducts.t_soluongtonthau }}</td>
-                                <td>{{ filterProducts.so_luong_dat }}</td>
+                                <td>{{ formatNumber(filterProducts.so_luong) }}</td>
+                                <td>{{ formatNumber(filterProducts.tien) }}</td>
+                                <td>{{ formatNumber(filterProducts.sl_ban_thang) }}</td>
+                                <td>{{ formatNumber(filterProducts.so_thang_ban) }}</td>
+                                <td>{{ formatNumber(filterProducts.t_soluongtonthau) }}</td>
+                                <td>{{ formatNumber(filterProducts.so_luong_dat) }}</td>
                                 <td>{{ filterProducts.ma_plvt2 }}</td>
                                 <td>{{ filterProducts.ten_plvt2 }}</td>
                                 <td>{{ filterProducts.ma_plvt3 }}</td>

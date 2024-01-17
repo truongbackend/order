@@ -3,16 +3,13 @@
 <div class="card">
     <div class="card-header">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-10">
                 <div class="input-group input-group-merge">
                     <span class="input-group-text" id="basic-addon-search31"><i class="bx bx-search"></i></span>
                     <input type="text" class="form-control" v-model="searchKeyword" @input="searchProducts" placeholder="Nhập thông tin tìm kiếm ..." aria-label="Search..." aria-describedby="basic-addon-search31">
                 </div>
             </div>
-            <div class="col-md-4">
-                <model-list-select :list="customer" v-model="selectedCustomer" option-value="ID" option-text="customer_name" placeholder="Chọn khách hàng"></model-list-select>
-            </div>
-            <div class="col-md-4">
+            <div class="col-md-2">
                 <select id="ProductStock" class="form-select text-capitalize" v-model="selectedStatus" @change="filterByStatusOrder">
                     <option value="">Chọn trạng thái</option>
                     <option value="1">Chưa thanh toán</option>

@@ -1,35 +1,27 @@
 <template>
 <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Thống kê người quản lý <i class="bx bx-chevron-right" style="font-size: 40px;"></i></span> Danh sách</h4>
 <div class="card">
-    <div class="card-header d-flex align-items-center justify-content-between">
-        <div class="mb-3 me-sm-2">
-            <label for="exampleFormControlSelect1" class="form-label">Quản lý</label>
-            <select v-model="selectedUser" @change="filterByCustomer" class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
-                <option value="">Chọn người quản lý</option>
-                <option v-for="user in users" :value="user.id" :key="user.id">{{ user.display_name }}</option>
-
-            </select>
-        </div>
-        <div class="mb-3 me-sm-2">
-            <label for="exampleFormControlSelect1" class="form-label">Khách hàng</label>
-            <select v-model="selectedCustomer" @change="filterByCustomer" class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
-                <option value="">Khách hàng</option>
-                <option v-for="customerItem in customer" :value="customerItem.ID" :key="customerItem.ID">{{ customerItem.customer_name }}</option>
-            </select>
-        </div>
-        <div class="mb-3 me-sm-2">
-            <label for="exampleFormControlSelect1" class="form-label">Trạng thái</label>
-            <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
-                <option selected>Trạng thái</option>
-                <option v-for="status in status" :value="status.id">{{ status.name }}</option>
-            </select>
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlSelect1" class="form-label">Chi nhánh</label>
-            <select v-model="selectedStore" @change="filterByCustomer" class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
-                <option value="">Chọn chi nhánh</option>
-                <option v-for="store in stores" :value="store.ID">{{ store.store_name }}</option>
-            </select>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-3">
+                <label for="exampleFormControlSelect1" class="form-label">Quản lý</label>
+                <model-list-select :list="users" v-model="selectedUser" option-value="id" option-text="display_name" placeholder="Chọn quản lý"></model-list-select>
+            </div>
+            <div class="col-md-3">
+                <label for="exampleFormControlSelect1" class="form-label">Khách hàng</label>
+                <model-list-select :list="customer" v-model="selectedCustomer" option-value="ID" option-text="customer_name" placeholder="Chọn khách hàng"></model-list-select>
+            </div>
+            <div class="col-md-3">
+                <label for="exampleFormControlSelect1" class="form-label">Trạng thái</label>
+                <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
+                    <option selected>Trạng thái</option>
+                    <option v-for="status in status" :value="status.id">{{ status.name }}</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="exampleFormControlSelect1" class="form-label">Chi nhánh</label>
+                <model-list-select :list="stores" v-model="selectedStore" option-value="ID" option-text="store_name" placeholder="Chọn chi nhánh"></model-list-select>
+            </div>
         </div>
     </div>
     <div class="card-body">
@@ -64,8 +56,8 @@
             <nav aria-label="Page navigation mt-4">
                 <ul class="pagination justify-content-end">
                     <li class="page-item prev">
-                            <a class="page-link" href="javascript:void(0);" @click="changePage('first')"><i class="tf-icon bx bx-chevrons-left"></i></a>
-                        </li>
+                        <a class="page-link" href="javascript:void(0);" @click="changePage('first')"><i class="tf-icon bx bx-chevrons-left"></i></a>
+                    </li>
                     <li class="page-item prev">
                         <a class="page-link" href="javascript:void(0);" @click="changePage(currentPage - 1)">
                             <i class="tf-icon bx bx-chevron-left"></i>
@@ -80,10 +72,10 @@
                         </a>
                     </li>
                     <li class="page-item next">
-                            <a class="page-link" href="javascript:void(0);">
-                                <i class="tf-icon bx bx-chevrons-right" @click="changePage('last')"></i>
-                            </a>
-                        </li>
+                        <a class="page-link" href="javascript:void(0);">
+                            <i class="tf-icon bx bx-chevrons-right" @click="changePage('last')"></i>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -105,8 +97,11 @@ import {
 import {
     inject
 } from 'vue';
-
+import { ModelListSelect } from 'vue-search-select';
 export default defineComponent({
+     components: {
+        ModelListSelect,
+    },
     setup() {
         const globalState = inject('globalState');
         const baseUrl = globalState.baseUrl;

@@ -310,7 +310,7 @@
         <div class="col-md-4">
             <div class="card mt-4">
                 <div class="card-header justify-content-between text-center">
-                    <h5 class="card-title m-0">Tồn thầu</h5>
+                    <h5 class="card-title m-0">Danh sách khách hàng chưa tham gia thầu</h5>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive text-nowrap table-scroll table-px">

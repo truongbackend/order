@@ -11,7 +11,7 @@
                     <div class="row mb-3">
                         <label class="col-sm-2 col-form-label" for="customer_code">Mã khách hàng</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" v-model="customer.customer_code" id="customer_code" placeholder="Mã khách hàng(tự sinh nếu bỏ trống)" />
+                            <input type="text" class="form-control" v-model="customer.customer_code" id="customer_code" disabled placeholder="Mã khách hàng tự sinh" />
                         </div>
                         <div class="col-sm-10">
                             <small v-if="errors.customer_code">{{errors.customer_code[0] }}</small>
@@ -20,7 +20,7 @@
                     <div class="row mb-3">
                         <label class="col-sm-2 col-form-label" for="customer_name">Tên khách hàng</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" v-model="customer.customer_name" id="customer_name" placeholder="Nhập tên khách hàng( bắc buộc )" />
+                            <input type="text" class="form-control" v-model="customer.customer_name" id="customer_name" placeholder="Nhập tên khách hàng" />
                             <small class="text-danger text-start-center" v-if="errors.customer_name">{{ errors.customer_name[0] }}</small>
                         </div>
                     </div>

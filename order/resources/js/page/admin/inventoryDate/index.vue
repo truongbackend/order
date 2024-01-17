@@ -39,7 +39,7 @@
                             <tr>
                                 <th>No</th>
                                 <th>Tên chi nhánh</th>
-                                <th class="content-table-customer">tên khách hàng</th>
+                                <th class="content-table-customer">tên kho hàng</th>
                                 <th>loại</th>
                                 <th>mã vật tư</th>
                                 <th class="content-table-customer">tên vật tư - đóng gói - nsx </th>
@@ -54,8 +54,8 @@
                                 <th>Tổng tiền</th>
                                 <th>số lượng trung bình bán/tháng</th>
                                 <th>Nhóm điều trị</th>
-                                <th>tên nhvt</th>
-                                <th>nha sản xuất</th>
+                                <th>tên nhóm vật tư</th>
+                                <th>nhà sản xuất</th>
                                 <th>tổng số lượng tồn thầu</th>
                                 <th>tổng số lượng tồn thầu theo CN</th>
                             </tr>
@@ -89,11 +89,14 @@
                                 </td>
                                 <td @click="handleMaVtClick(filterInventorys.ma_vt)">{{ filterInventorys.ma_plvt3 }}
                                 </td>
+                                <td @click="handleMaVtClick(filterInventorys.ma_vt)">{{ filterInventorys.ten_nhvt }}
+                                </td>
+                                
                                 <td @click="handleMaVtClick(filterInventorys.ma_vt)">{{ filterInventorys.ten_plvt2 }}
                                 </td>
-                                <td @click="handleMaVtClick(filterInventorys.ma_vt)">{{ formatNumber(filterInventorys.T_SLTonThau) }}
+                                <td @click="handleMaVtClick(filterInventorys.ma_vt)">{{ formatNumber(filterInventorys.t_SLTonThau) }}
                                 </td>
-                                <td @click="handleMaVtClick(filterInventorys.ma_vt)">{{ formatNumber(filterInventorys.T_SLTonThau_CN)}}
+                                <td @click="handleMaVtClick(filterInventorys.ma_vt)">{{ formatNumber(filterInventorys.t_SLTonThau_CN)}}
                                 </td>
                             </tr>
                         </tbody>

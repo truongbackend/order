@@ -25,10 +25,17 @@ class DebtsController extends Controller
         $keyword = $request->input('keyword');
         $customerId = $request->input('customer_id');
         $selectStatusOrder = $request->input('selected_status');
-        $debts = Debts::query();
+        $debts = Debts::query()->with('Customer');
         if ($keyword) {
-            $debts->where('output_code', 'like', "%{$keyword}%");
+            $debts->where(function ($query) use ($keyword) {
+                $query->where('output_code', 'like', "%{$keyword}%")
+                      ->orWhere('paiddate', 'like', "%{$keyword}%")
+                      ->orWhereHas('Customer', function ($subquery) use ($keyword) {
+                          $subquery->where('customer_name', 'like', "%{$keyword}%");
+                      });
+            });
         }
+        
         if ($customerId) {
             $debts->where('customer_id', $customerId); // Apply customer filter
         }

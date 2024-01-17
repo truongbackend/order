@@ -1,7 +1,8 @@
 <template>
     <div class="row">
         <div class="col-md-6">
-            <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Đơn hàng <i class="bx bx-chevron-right"
+            <h4 class="fw-bold py-3 mb-4">
+                <span class="text-muted fw-light">Đơn hàng <i class="bx bx-chevron-right"
                         style="font-size: 40px;"></i></span> Danh sách đơn hàng</h4>
         </div>
         <div class="col-md-6" v-if="hasPermission('order.create')">
@@ -47,7 +48,7 @@
                             <td>{{ stores.find(x => x.ID == order.store_id)?.store_name }}</td>
                             <td>{{ status.find(x => x.id == order.order_status)?.name }}</td>
                             <td>{{ order.created }}</td>
-                            <td>{{ order.total_money }}</td>
+                            <td>{{ formatNumber(order.total_money) }}</td>
                             <td>
                                 <div class="dropdown">
                                     <a href="javascript:void(0);" @click="printInvoice(order.ID)"><i
@@ -167,6 +168,13 @@ export default defineComponent({
                 .catch((error) => {
                     console.log(error);
                 });
+        };
+        const formatNumber = (value) => {
+            if (value !== undefined && value !== null) {
+                return value.toLocaleString();
+            } else {
+                return '';
+            }
         };
         const getOrderStatus = (orderId) => {
             if (confirm("Bạn có chắc chắn muốn xóa đơn hàng trên trang này?")) {
@@ -297,6 +305,7 @@ export default defineComponent({
             getOrderStatus,
             printInvoice,
             hasPermission,
+            formatNumber
         };
     },
 

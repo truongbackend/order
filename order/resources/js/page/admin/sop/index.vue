@@ -26,10 +26,7 @@
                     <div class="row mb-3">
                         <label for="customerNameSelect" class="col-sm-2 col-form-label">Tên khách hàng</label>
                         <div class="col-sm-10">
-                            <select v-model="selectedCustomer" @change="filterByCustomer" class="form-select" id="customerNameSelect" aria-label="Default select example">
-                                <option value="">Chọn khách hàng</option>
-                                <option v-for="customerItem in customer" :value="customerItem.ID" :key="customerItem.id">{{ customerItem.customer_name }}</option>
-                            </select>
+                            <model-list-select :list="customer" v-model="selectedCustomer" option-value="ID" option-text="customer_name" placeholder="Chọn khách hàng"></model-list-select>
                         </div>
                     </div>
                     <div class="row mb-3">
@@ -212,7 +209,11 @@ import {
 import {
     useToast
 } from 'vue-toast-notification';
+import { ModelListSelect } from 'vue-search-select';
 export default defineComponent({
+     components: {
+        ModelListSelect,
+    },
     setup() {
         const userPermission = ref([]);
         const findProductName = (product) => {
@@ -231,7 +232,7 @@ export default defineComponent({
         const products = ref([]);
         const selectedCustomer = ref('');
         const selectedProduct = ref('');
-        const customer_bids_products = ref('');
+        const customer_bids_products = ref([]);
         const notes = ref('');
         const selectedProducts = ref([]);
         const product_unit = ref([]);
