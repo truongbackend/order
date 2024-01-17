@@ -65,7 +65,7 @@
                                 <td>{{ filterInventorys.e_han_dung }}</td>
                                 <td>{{ filterInventorys.so_ngay_cl }}</td>
                                 <td>{{ filterInventorys.ngay_nhapkho }}</td>
-                                <td>{{ filterInventorys.so_luong }}</td>
+                                <td>{{ formatNumber(filterInventorys.so_luong) }}</td>
                                 <td>{{ formatNumber(filterInventorys.don_gia) }}</td>
                                 <td>{{ formatNumber(filterInventorys.tien) }}</td>
                             </tr>

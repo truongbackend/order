@@ -68,7 +68,6 @@
                         </thead>
                         <tbody>
                             <tr v-for="(ds_marketingtheochinhanhcaps, index) in ds_marketingtheochinhanhcap" :key="index">
-                                <td>{{ index + 1 }}</td>
                                 <td>{{ ds_marketingtheochinhanhcaps.ten}}</td>
                                 <td>{{ formatNumber(ds_marketingtheochinhanhcaps.soluong_khban)}}</td>
                                 <td>{{ formatNumber(ds_marketingtheochinhanhcaps.tangtruong_slnamtruoc)}}</td>
@@ -130,7 +129,6 @@
                         </thead>
                         <tbody>
                             <tr v-for="(ds_marketingtheonhanviens, index) in ds_marketingtheonhanvien" :key="index">
-                                <td>{{ index + 1 }}</td>
                                 <td>{{ ds_marketingtheonhanviens.ten}}</td>
                                 <td>{{ formatNumber(ds_marketingtheonhanviens.soluong_khban)}}</td>
                                 <td>{{ formatNumber(ds_marketingtheonhanviens.tangtruong_slnamtruoc)}}</td>
@@ -194,7 +192,6 @@
                         </thead>
                         <tbody>
                             <tr v-for="(ds_marketingtheokhachhangs, index) in ds_marketingtheokhachhang" :key="index">
-                                <td>{{ index + 1 }}</td>
                                 <td>{{ ds_marketingtheokhachhangs.ten}}</td>
                                 <td>{{ formatNumber(ds_marketingtheokhachhangs.soluong_khban)}}</td>
                                 <td>{{ formatNumber(ds_marketingtheokhachhangs.tangtruong_slnamtruoc)}}</td>
@@ -256,7 +253,6 @@
                         </thead>
                         <tbody>
                             <tr v-for="(ds_marketingtheonkhs, index) in ds_marketingtheonkh" :key="index">
-                                <td>{{ index + 1 }}</td>
                                 <td>{{ ds_marketingtheonkhs.ten}}</td>
                                 <td>{{ formatNumber(ds_marketingtheonkhs.soluong_khban)}}</td>
                                 <td>{{ formatNumber(ds_marketingtheonkhs.tangtruong_slnamtruoc)}}</td>
@@ -320,7 +316,6 @@
                         </thead>
                         <tbody>
                             <tr v-for="(ds_marketingtheonsps, index) in ds_marketingtheonsp" :key="index">
-                                <td>{{ index + 1 }}</td>
                                 <td>{{ ds_marketingtheonsps.ten}}</td>
                                 <td>{{ formatNumber(ds_marketingtheonsps.soluong_khban)}}</td>
                                 <td>{{ formatNumber(ds_marketingtheonsps.tangtruong_slnamtruoc)}}</td>
@@ -382,7 +377,6 @@
                         </thead>
                         <tbody>
                             <tr v-for="(ds_marketingtheosanphams, index) in ds_marketingtheosanpham" :key="index">
-                                <td>{{ index + 1 }}</td>
                                 <td>{{ ds_marketingtheosanphams.ten}}</td>
                                 <td>{{ formatNumber(ds_marketingtheosanphams.soluong_khban)}}</td>
                                 <td>{{ formatNumber(ds_marketingtheosanphams.tangtruong_slnamtruoc)}}</td>

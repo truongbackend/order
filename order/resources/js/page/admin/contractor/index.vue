@@ -40,7 +40,7 @@
             <div class="card">
                 <div class="card-body">
                     <span class="fw-semibold d-block mb-1">Số lượng mời thầu</span>
-                    <h6 class="card-title mb-2"> {{ formatNumber(ds_thauchung.soluong_moithau) }} M</h6>
+                    <h6 class="card-title mb-2"> {{ formatNumber(ds_thauchung.soluong_moithau) }} </h6>
                 </div>
             </div>
         </div>
@@ -385,14 +385,14 @@
                             <tbody>
                                 <tr v-for="(ds_thautheokhachhangs, index) in ds_thautheokhachhang" :key="index">
                                     <td>{{ ds_thautheokhachhangs.ten }}</td>
-                                    <td>{{ ds_thautheokhachhangs.giatri_moithau }}</td>
-                                    <td>{{ ds_thautheokhachhangs.tile_soluongtrungthau }}</td>
-                                    <td>{{ ds_thautheokhachhangs.tile_giatritrungthau }}</td>
-                                    <td>{{ ds_thautheokhachhangs.giatri_trungthau }}</td>
-                                    <td>{{ ds_thautheokhachhangs.giatri_thau }}</td>
-                                    <td>{{ ds_thautheokhachhangs.giatri_thuchien }}</td>
-                                    <td>{{ ds_thautheokhachhangs.giatri_tonthau }}</td>
-                                    <td>{{ ds_thautheokhachhangs.giatri_bothau }}</td>
+                                    <td>{{ formatNumber(ds_thautheokhachhangs.giatri_moithau) }}</td>
+                                    <td>{{ formatNumber(ds_thautheokhachhangs.tile_soluongtrungthau) }}</td>
+                                    <td>{{ formatNumber(ds_thautheokhachhangs.tile_giatritrungthau) }}</td>
+                                    <td>{{ formatNumber(ds_thautheokhachhangs.giatri_trungthau) }}</td>
+                                    <td>{{ formatNumber(ds_thautheokhachhangs.giatri_thau) }}</td>
+                                    <td>{{ formatNumber(ds_thautheokhachhangs.giatri_thuchien) }}</td>
+                                    <td>{{ formatNumber(ds_thautheokhachhangs.giatri_tonthau) }}</td>
+                                    <td>{{ formatNumber(ds_thautheokhachhangs.giatri_bothau) }}</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -424,14 +424,14 @@
                             <tbody>
                                 <tr v-for="(ds_thautheosanphams, index) in ds_thautheosanpham" :key="index">
                                     <td>{{ ds_thautheosanphams.ten }}</td>
-                                    <td>{{ ds_thautheosanphams.giatri_moithau }}</td>
-                                    <td>{{ ds_thautheosanphams.tile_soluongtrungthau }}</td>
-                                    <td>{{ ds_thautheosanphams.tile_giatritrungthau }}</td>
-                                    <td>{{ ds_thautheosanphams.giatri_trungthau }}</td>
-                                    <td>{{ ds_thautheosanphams.giatri_thau }}</td>
-                                    <td>{{ ds_thautheosanphams.giatri_thuchien }}</td>
-                                    <td>{{ ds_thautheosanphams.giatri_tonthau }}</td>
-                                    <td>{{ ds_thautheosanphams.giatri_bothau }}</td>
+                                    <td>{{ formatNumber(ds_thautheosanphams.giatri_moithau) }}</td>
+                                    <td>{{ formatNumber(ds_thautheosanphams.tile_soluongtrungthau) }}</td>
+                                    <td>{{ formatNumber(ds_thautheosanphams.tile_giatritrungthau) }}</td>
+                                    <td>{{ formatNumber(ds_thautheosanphams.giatri_trungthau) }}</td>
+                                    <td>{{ formatNumber(ds_thautheosanphams.giatri_thau) }}</td>
+                                    <td>{{ formatNumber(ds_thautheosanphams.giatri_thuchien) }}</td>
+                                    <td>{{ formatNumber(ds_thautheosanphams.giatri_tonthau) }}</td>
+                                    <td>{{ formatNumber(ds_thautheosanphams.giatri_bothau) }}</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -475,10 +475,10 @@
                                     <td>{{ ds_tonthaus.ngay_trung_thau }}</td>
                                     <td>{{ ds_tonthaus.ngay_th_hd }}</td>
                                     <td>{{ ds_tonthaus.ngay_kt_hd }}</td>
-                                    <td>{{ ds_tonthaus.slThau }}</td>
-                                    <td>{{ ds_tonthaus.tienThau }}</td>
-                                    <td>{{ ds_tonthaus.slTonThau }}</td>
-                                    <td>{{ ds_tonthaus.tienTonThau }}</td>
+                                    <td>{{ formatNumber(ds_tonthaus.slThau) }}</td>
+                                    <td>{{ formatNumber(ds_tonthaus.tienThau) }}</td>
+                                    <td>{{ formatNumber(ds_tonthaus.slTonThau) }}</td>
+                                    <td>{{ formatNumber(ds_tonthaus.tienTonThau) }}</td>
                                 </tr>
                             </tbody>
                         </table>
