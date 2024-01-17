@@ -461,7 +461,7 @@
     <div class="col-md-6">
         <div class="card mt-4">
             <div class="card-header justify-content-between text-center">
-                <h5 class="card-title m-0">Công nợ theo sales</h5>
+                <h5 class="card-title m-0">Công nợ theo sale</h5>
             </div>
             <div class="card-body">
                 <div class="table-responsive text-nowrap scroll table-scroll table-px table-px">
